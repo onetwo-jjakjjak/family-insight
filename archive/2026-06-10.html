@@ -29,7 +29,7 @@
   .body{font-size:15.5px;color:#36404B;}
   .body b{color:var(--ink);font-weight:700;}
   .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
-  .more{display:inline-flex;align-items:center;gap:4px;margin-top:11px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;padding:4px 0;min-height:28px;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
   .more:active{opacity:.6;}
   footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
   .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
@@ -42,32 +42,62 @@
   <header>
     <div class="date">2026년 6월 10일 수요일</div>
     <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
-    <div class="weather">🌥️ 수원 오늘 흐림 · 우산 챙기세요</div>
+    <div class="weather">🌤️ 수원 오늘 25~31℃ · 주말 토요일 흐림, 일요일 빗방울</div>
   </header>
   <div class="copy">
     <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span><button class="copy-btn" onclick="copyCard()">복사</button></div>
     <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (6/10)
-💬 식탁: 수박 속이 빨간 건 '라이코펜' 덕분이에요!
-📈 증시: 간밤 나스닥 4% 급락, 지정학적 긴장 주의
-🏠 부동산: 선거 후 정부 강공 정책 예고, 수도권 눈치 보기
-🧸 육아: "잘했어" 대신 "열심히 했구나" — 과정 칭찬의 힘
+💬 식탁: 반딧불이 배 속 루시페린이 산소와 만나면 차갑고 반짝이는 빛이 나와요!
+📈 증시: 간밤 나스닥 3%↓ — 오늘 코스피 반도체 하방 압력, 방산·에너지 순환매 주목해요.
+🏠 부동산: DSR 3단계 후 대출 한도 축소, 공급 부족으로 매매·전세 심리 지지 중이에요.
+🧸 육아: 퇴근 후 5분, "오늘 뭐가 제일 재미있었어?" 한 마디면 아이 자신감이 쑥쑥!
 👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
   </div>
   <div class="stack">
-    <div class="card"><div class="head"><div class="chip" style="background:#FDEFE0;color:var(--c-talk)">💬</div><div class="title">오늘의 식탁 이야기</div></div><div class="body">수박 속이 빨간 건 '라이코펜'이라는 색소 덕분이에요. 수박이 햇빛을 받으며 익을수록 라이코펜이 늘어나서 속살이 점점 더 새빨개진답니다!</div><div class="ask">수박을 잘라서 속 색깔을 보고, '왜 껍질은 초록색인데 안은 빨간색일까?' 같이 생각해 볼까요?</div><a class="more" href="https://blog.lgchem.com/2016/05/watermelon-chemistry-editor/">자세히 보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">육아·교육 팁</div></div><div class="body">오늘 아이가 뭔가를 해냈을 때 '잘했어!' 대신 '열심히 했구나, 과정이 멋졌어!'처럼 노력한 과정을 콕 집어 칭찬해 주세요. 결과보다 과정을 칭찬받은 아이는 어려운 도전도 피하지 않고 스스로 해보려는 힘이 쑥쑥 자란다고 해요.</div><a class="more" href="https://happyedu.moe.go.kr/happy/bbs/selectHappyArticle.do?bbsId=BBSMSTR_000000005152&nttId=10210">자세히 보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E4F4EC;color:var(--c-money)">📈</div><div class="title">경제·증시</div></div><div class="body">간밤 미국 증시는 지정학적 긴장이 고조되며 나스닥이 약 4% 급락하고 S&amp;P500도 2% 넘게 떨어졌어요. 반도체·AI주 중심의 매물이 쏟아진 만큼, 오늘 코스피·코스닥도 반도체 대형주 흐름을 주목할 필요가 있어요.</div><a class="more" href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-09-2026">시황 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E5EFF8;color:var(--c-home)">🏠</div><div class="title">부동산</div></div><div class="body">6·4 지방선거가 끝나자마자 정부가 부동산 '강공 드라이브'를 예고했어요. 다주택·투기 억제 정책이 더 강해질 거란 관측이 나오고 있어서, 수도권 거래심리가 당분간 눈치 보기 장세로 흐를 가능성이 전망돼요.</div><a class="more" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6826852_37004.html">동향 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">주요 뉴스</div></div><div class="body">① 6·3 지방선거 투표용지 부족 사태로 올림픽공원 개표소 봉쇄 시위가 이틀째 이어지며 인파가 2만 명을 넘어섰고 선관위는 오늘부터 진상규명위원회를 가동했어요. ② 한미 양국이 핵추진잠수함 건조 관련 공식 협상 후속 논의를 이어가며 조속한 성과 도출에 합의했어요. ③ 북한 김정은·중국 시진핑 평양 정상회담에서 양국 관계의 새 시대를 열겠다고 선언했어요.</div><a class="more" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828236_37004.html">뉴스 모아보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">오늘의 건강</div></div><div class="body">초여름엔 땀으로 수분이 쑥 빠져나가니, 오이·참외·토마토처럼 수분 90% 이상인 제철 과채를 자주 챙겨 드세요. 시원한 물도 하루 1.5~2ℓ 목표로 조금씩 나눠 마시면 온 가족 컨디션 유지에 도움이 돼요!</div><a class="more" href="https://www.fortunekorea.co.kr/news/articleView.html?idxno=41274">건강 팁 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E2F5F6;color:var(--c-life)">🌤️</div><div class="title">생활 · 주말</div></div><div class="body">오늘 수원은 경기도 전역 흐림 전망으로 우산을 챙겨두는 게 좋아요. 이번 주말(13~14일) 나들이를 계획 중이라면 수원화성 일대를 가볍게 산책하면서 6월 제철 매실청 음료나 참외로 더위를 식혀보는 건 어떨까요?</div><a class="more" href="https://www.weather.go.kr/w/forecast/overall/short-term.do">주말 나들이 →</a></div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#FDEFE0;color:var(--c-talk)">💬</div><div class="title">오늘의 식탁 이야기</div></div>
+      <div class="body">반딧불이 배 속에는 '루시페린'이라는 특별한 물질이 있는데, 숨을 쉴 때 들어온 산소와 만나면 반짝반짝 빛을 만들어내요! 이 빛은 뜨겁지 않고 차가운 빛이라서 반딧불이가 전혀 뜨겁지 않아요.</div>
+      <div class="ask">오늘 밤 손전등을 반짝반짝 껐다 켰다 해보면서, 반딧불이처럼 가족끼리 빛으로 신호를 만들어볼까요?</div>
+      <a class="more" href="https://jr.etnews.com/20250321000150" target="_blank" rel="noopener">자세히 보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">육아·교육 팁</div></div>
+      <div class="body">퇴근 후 아이와 단 5분이라도 눈을 맞추고 '오늘 어떤 일이 가장 재미있었어?'라고 물어봐 주세요. 정답을 요구하지 않고 아이의 말을 끝까지 들어주는 것만으로도 아이의 자신감과 표현력이 쑥쑥 자라요.</div>
+      <a class="more" href="https://www.chaisplay.com/stories/3199-%EC%9D%B4-%EA%B2%83%EB%A7%8C-%EC%95%8C%EB%A9%B4-%EC%95%84%EC%9D%B4%EC%99%80%EC%9D%98-%EB%8C%80%ED%99%94%EA%B0%80-%EC%89%AC%EC%9B%8C%EC%9A%94-%EC%95%84%EC%9D%B4%EC%99%80-%EB%8C%80%ED%99%94-%ED%8C%81-5%EA%B0%80%EC%A7%80" target="_blank" rel="noopener">자세히 보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E4F4EC;color:var(--c-money)">📈</div><div class="title">경제·증시</div></div>
+      <div class="body">간밤 미국장(6월 9일)은 트럼프 대통령의 이란 대응 발언과 AI·반도체주 고평가 우려가 겹치면서 나스닥이 3% 넘게 급락하고 S&P500도 1% 하락, 다우도 0.5% 내리며 기술주 중심으로 약세 마감했어요. 오늘 코스피·코스닥은 반도체·IT 종목 위주의 하방 압력이 예상되지만, 방산·에너지 등 비기술 섹터로의 순환매 흐름도 함께 살펴볼 필요가 있어요.</div>
+      <a class="more" href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-09-2026" target="_blank" rel="noopener">시황 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E5EFF8;color:var(--c-home)">🏠</div><div class="title">부동산</div></div>
+      <div class="body">2026년 6월 현재 수도권 부동산 시장은 스트레스 DSR 3단계 적용으로 대출 한도가 줄어든 가운데, 서울 신축 입주 물량이 전년 대비 급감하면서 공급 부족이 매매·전세 심리를 동시에 지지하고 있어요. 금리 인하 기대감은 있지만 주담대 금리는 여전히 높은 수준을 유지 중이라 실수요자들의 부담은 계속되고 있는 상황이에요.</div>
+      <a class="more" href="https://kbthink.com/realestate/basics/2026-housing-market.html" target="_blank" rel="noopener">동향 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">주요 뉴스</div></div>
+      <div class="body">오늘은 생활·문화·경제 소식 세 가지예요. ① 비만치료제 마운자로 고용량(12.5mg·15mg)이 오늘 국내 정식 출시됐어요 — 임상에서 72주 만에 최대 22.5% 체중 감량 효과 확인! ② 2026 북중미 월드컵에 맞춰 멕시코 전역에서 K컬처 축제가 한창이에요, 케이팝·K푸드·전통연희에 현지 반응이 뜨겁다고 해요. ③ 6·3 지방선거 투표용지 수량 논란 관련 검·경 합동수사본부가 공식 출범했어요.</div>
+      <a class="more" href="https://www.thepublic.kr/news/articleView.html?idxno=306254" target="_blank" rel="noopener">뉴스 모아보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">오늘의 건강</div></div>
+      <div class="body">초여름 수원은 기온이 오르고 땀이 많이 나는 시기라, 목마르기 전에 물을 조금씩 자주 마시는 습관이 정말 중요해요. 수박·오이처럼 수분이 풍부한 제철 과일과 채소를 함께 드시면 더위도 이기고 건강도 챙길 수 있어요!</div>
+      <a class="more" href="https://kormedi.com/1595744/" target="_blank" rel="noopener">건강 팁 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E2F5F6;color:var(--c-life)">🌤️</div><div class="title">생활 · 주말</div></div>
+      <div class="body">이번 주말(6/13~14) 수원은 토요일 최고 31°C 흐린 날씨, 일요일은 25°C에 가벼운 빗방울이 예상되니 우산 챙겨 나가세요! 수원화성 일대에서는 '한옥에서 노는 주말' 상설 프로그램과 화성행궁 야간개장이 진행 중이고, 6월 제철 식재료인 참외와 햇감자로 간단히 냉채나 감자전을 만들어 보는 것도 좋아요.</div>
+      <a class="more" href="https://www.korea247.kr/south-korea/gyeonggi-do/weather-suwon/" target="_blank" rel="noopener">주말 나들이 →</a>
+    </div>
   </div>
   <footer>매일 아침 자동 생성 · 출처는 각 '자세히 보기' 링크 참고<br>※ 투자·의료 정보는 참고용이며 판단의 책임은 본인에게 있어요.</footer>
 </div>
 <div class="toast" id="toast">복사됐어요 ✓</div>
 <script>
-  function copyCard(){const t=document.getElementById('cardText').innerText;navigator.clipboard?.writeText(t).then(showToast).catch(()=>{const r=document.createRange();r.selectNode(document.getElementById('cardText'));const s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');showToast();}catch(e){}s.removeAllRanges();});}
-  function showToast(){const el=document.getElementById('toast');el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600);}
+  function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+  function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.top='0';ta.style.left='0';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,t.length);var ok=false;try{ok=document.execCommand('copy');}catch(e){}document.body.removeChild(ta);showToast(ok?'복사됐어요 ✓':'길게 눌러 복사해 주세요');}
+  function copyCard(){var t=document.getElementById('cardText').innerText;if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){showToast();},function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
 </script>
 </body>
 </html>
