@@ -6,7 +6,7 @@
 <title>우리 가족 모닝 브리핑</title>
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
   html{-webkit-text-size-adjust:100%;}
   body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
@@ -42,25 +42,59 @@
   <header>
     <div class="date">2026년 6월 14일 일요일</div>
     <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
-    <div class="weather">☀️ 수원 오늘 최고 30℃ · 초여름 맑음</div>
+    <div class="weather">🌦️ 수원 오늘 25~30℃ · 오후 소나기 가능, 우산 챙기세요</div>
   </header>
   <div class="copy">
     <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span><button class="copy-btn" onclick="copyCard()">복사</button></div>
     <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (6/14)
-💬 식탁: 해바라기는 빛이 아니라 줄기의 성장 속도 차이로 해를 따라가요!
-📈 증시: 미국 3대 지수 소폭 상승, 이번 주 코스피는 반도체 흐름이 관건이에요
-🏠 부동산: 금리 동결 속 공공분양 실수요 청약에 관심이 쏠리고 있어요
-🧸 육아: 결과보다 과정을 칭찬하는 한마디가 아이 자신감을 키워줘요
-👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/index.html</div>
+💬 꿀벌은 8자 춤으로 꽃 위치를 알려줘요 — 엉덩이 흔들기가 비밀 지도!
+📈 미국 나스닥 +2.54%, 이란 협상 기대 &amp; SpaceX 상장 호재
+⚽ 한국 월드컵 체코전 2-1 역전승! 16년 만의 첫 경기 승리
+🎓 정보처리기사 2회 실기 접수 6/22~25 — D-8, 서두르세요!
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
   </div>
   <div class="stack">
-    <div class="card"><div class="head"><div class="chip" style="background:#FDEFE0;color:var(--c-talk)">💬</div><div class="title">오늘의 식탁 이야기</div></div><div class="body">해바라기는 꽃이 피기 전까지 매일 아침 동쪽, 저녁에는 서쪽으로 고개를 돌리면서 해를 쫓아가요. 빛 때문이 아니라 줄기의 동쪽과 서쪽이 번갈아 더 빨리 자라는 덕분이에요!</div><div class="ask">오늘 창문 밖에 있는 식물이나 꽃을 아침·점심·저녁에 한 번씩 관찰해서, 방향이 바뀌는지 같이 확인해볼까?</div><a class="more" href="https://www.ucdavis.edu/curiosity/news/how-sunflowers-see-sun" target="_blank" rel="noopener">자세히 보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">육아·교육 팁</div></div><div class="body">아이가 뭔가를 해냈을 때 '잘했어!' 대신 '혼자 해보려고 끝까지 집중했네, 그게 진짜 대단한 거야'처럼 과정을 콕 짚어 칭찬해줘요. 구체적인 칭찬 한 마디가 아이 스스로 '나는 할 수 있어'라는 자신감을 쌓는 데 훨씬 큰 힘이 돼요.</div><a class="more" href="https://www.chaisplay.com/stories/1181-%EC%9A%B0%EB%A6%AC-%EC%95%84%EC%9D%B4-%EC%B9%AD%EC%B0%AC%EA%B3%BC-%ED%9B%88%EC%9C%A1-%EC%9D%B4%EB%A0%87%EA%B2%8C-%ED%95%B4%EB%B3%B4%EC%84%B8%EC%9A%94" target="_blank" rel="noopener">자세히 보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E4F4EC;color:var(--c-money)">📈</div><div class="title">경제·증시</div></div><div class="body">지난 금요일(6/12) 미국 증시는 미·이란 평화 협상 기대와 스페이스X 역대 최대 규모 IPO 성공에 힘입어 S&amp;P500 +0.5%, 다우 +0.7%, 나스닥 +0.3%로 마감했어요. 이번 주 국내 코스피는 반도체(삼성전자·SK하이닉스) 흐름과 외국인 매도세 둔화 여부, 그리고 미·이란 협상 진전이 주요 관전 포인트예요.</div><a class="more" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828934_37004.html" target="_blank" rel="noopener">시황 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E5EFF8;color:var(--c-home)">🏠</div><div class="title">부동산</div></div><div class="body">한국은행 기준금리가 2.50%로 유지되는 가운데, 수도권 민간 청약은 사실상 개점휴업 상태예요. 대신 동탄2 LH 공공분양처럼 시세보다 저렴한 실수요 물량에 청약 관심이 집중되는 분위기예요.</div><a class="more" href="https://www.newspim.com/news/view/20260610000866" target="_blank" rel="noopener">동향 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">주요 뉴스</div></div><div class="body">한국은행이 기준금리를 2.50%로 동결하면서 올해 경제성장률 전망을 2.6%로 올렸어요. AI 반도체 수출 호황 덕분이래요. 태극전사들이 2026 북중미 월드컵 첫 경기에서 체코를 2-1로 역전 제압해 기분 좋은 출발을 끊었어요. 문화 분야에선 K-컬처 시장 목표가 400조 원으로 상향됐고, 해외 26개국 응답자 70% 이상이 한국 콘텐츠를 좋아한다고 답했어요.</div><a class="more" href="https://www.kedglobal.com/central-bank/newsView/ked202605280001" target="_blank" rel="noopener">뉴스 모아보기 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">오늘의 건강</div></div><div class="body">초여름엔 에어컨 바람에 오래 노출되면 냉방병이 생기기 쉬워요. 실내 온도를 22~26℃로 유지하고, 차가운 바람이 몸에 직접 닿지 않도록 얇은 겉옷을 챙겨두는 게 좋아요!</div><a class="more" href="https://www.nutrione.co.kr/mgz/dtlMgz/109" target="_blank" rel="noopener">건강 팁 자세히 →</a></div>
-    <div class="card"><div class="head"><div class="chip" style="background:#E2F5F6;color:var(--c-life)">🌤️</div><div class="title">생활 · 주말</div></div><div class="body">오늘 수원은 최고 30℃ 안팎의 초여름 날씨예요. 화성행궁 야간개장 '달빛화담'이 오늘도 오후 6시부터 9시 30분까지 열리니, 저녁 산책 겸 야경 구경 어때요? 집에서는 6월 제철인 매실청이나 오이냉국으로 더위를 식혀보세요!</div><a class="more" href="https://www.swcf.or.kr/?p=29_view&idx=2970&listUrl=118_month" target="_blank" rel="noopener">주말 나들이 →</a></div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#FDEFE0;color:var(--c-talk)">💬</div><div class="title">오늘의 식탁 이야기</div></div>
+      <div class="body">꿀벌은 말 대신 춤으로 친구들에게 꽃이 있는 곳을 알려줘요! 꽃이 멀리 있을수록 엉덩이를 흔들며 8자 모양으로 더 천천히 춤을 추는데, 이게 바로 꿀벌의 '비밀 지도'예요.</div>
+      <div class="ask">우리도 꿀벌처럼 말하지 않고 몸으로만 '냉장고에 뭔가 있어!'를 어떻게 표현할 수 있을까? 같이 춤으로 만들어 볼까요?</div>
+      <a class="more" href="https://www.home-learn.co.kr/newsroom/news/A/2430" target="_blank" rel="noopener">자세히 보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">육아·교육 팁</div></div>
+      <div class="body">오늘 아이가 무언가를 해냈을 때 '잘했어!' 대신 '끝까지 포기하지 않고 해냈구나, 그 과정이 정말 멋졌어요!'처럼 결과보다 노력과 과정을 구체적으로 칭찬해 주세요. 이런 과정 칭찬이 쌓이면 아이 스스로 도전을 즐기는 힘이 생겨요.</div>
+      <a class="more" href="https://www.chaisplay.com/stories/164-%EC%B9%AD%EC%B0%AC%EA%B3%BC-%EA%B2%A9%EB%A0%A4%EC%97%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9D%B4-%EC%9E%88%EC%96%B4%EC%9A%94-%EC%9A%B0%EB%A6%AC-%EC%95%84%EC%9D%B4-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8-%EC%B9%AD%EC%B0%AC-%EB%B0%A9%EB%B2%95" target="_blank" rel="noopener">자세히 보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E4F4EC;color:var(--c-money)">📈</div><div class="title">경제·증시</div></div>
+      <div class="body">지난 금요일(6/12) 미국 증시는 트럼프 대통령의 이란 협상 타결 기대감과 SpaceX 상장 호재로 나스닥 <b>+2.54%</b>, S&amp;P500 <b>+1.75%</b>, 다우 <b>+1.86%</b> 오르며 강하게 마감했어요. 이번 주 월요일(6/16) 한국 증시는 미국發 훈풍을 등에 업고 반도체·기술주 중심으로 상승 출발이 기대되지만, 근원물가 급등으로 연준 금리 경로 불확실성도 함께 챙겨볼 필요가 있어요.</div>
+      <a class="more" href="https://finance.naver.com/news/" target="_blank" rel="noopener">시황 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E5EFF8;color:var(--c-home)">🏠</div><div class="title">부동산</div></div>
+      <div class="body">수도권 아파트 시장은 스트레스 DSR 3단계 적용으로 대출 한도가 줄었지만, 공급 부족과 전세 수요 집중이 맞물리며 매매가를 지지하는 흐름이 이어지고 있어요. 금리 인하 기대감은 있지만 환율·가계부채 부담으로 하반기 방향은 아직 지켜봐야 해요.</div>
+      <a class="more" href="https://data.kbland.kr/databoard" target="_blank" rel="noopener">동향 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">주요 뉴스</div></div>
+      <div class="body">① 한국 축구 대표팀이 2026 북중미 월드컵 조별리그 첫 경기에서 체코를 2-1로 역전승했어요. 황인범과 오현규가 득점하며 무려 16년 만의 월드컵 첫 경기 승리를 일궈냈답니다! ② 코스피가 최근 8,000선을 회복하는 강세를 보이고 있어요. 한국 명목 GDP 성장률이 10.5%로 1976년 이후 50년 만에 최고치를 기록하며 경제 기초체력이 탄탄하다는 평가예요. ③ 5월 한국 수출액이 전년 동기 대비 53% 급증하며 월간 기준 역대 최고치인 878억 달러를 돌파했어요. 반도체 슈퍼사이클이 수출 호조를 이끌고 있다고 해요.</div>
+      <a class="more" href="https://news.naver.com" target="_blank" rel="noopener">뉴스 모아보기 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">오늘의 건강</div></div>
+      <div class="body">6월 중순, 기온이 오르면서 목이 마르지 않아도 1~2시간마다 물 한 컵씩 미리 마시는 습관이 온 가족의 탈수와 더위 피로를 막아줘요. 냉방 실내와 실외의 온도 차는 5~8도 이내로 유지하면 몸이 훨씬 편안해요.</div>
+      <a class="more" href="https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6551" target="_blank" rel="noopener">건강 팁 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E2F5F6;color:var(--c-life)">🌤️</div><div class="title">생활 · 주말</div></div>
+      <div class="body">오늘 수원은 낮 기온 25~30℃ 안팎의 따뜻한 날씨지만 오후에 소나기가 내릴 수 있으니 외출 시 우산을 챙기세요! 6월 제철인 매실·감자·장어를 활용해 매실청 담그기나 감자전 같은 간단한 요리를 즐겨보는 것도 좋아요.</div>
+      <a class="more" href="https://www.weather.go.kr/w/forecast/overall/mid-term.do" target="_blank" rel="noopener">날씨 자세히 →</a>
+    </div>
+    <div class="card">
+      <div class="head"><div class="chip" style="background:#E7EAFB;color:var(--c-cert)">🎓</div><div class="title">자격증 일정</div></div>
+      <div class="body">📌 <b>접수 임박(D-8)</b><br>• 정보처리기사 제2회 실기 원서접수: 6/22(월)~6/25(목), 실기시험 7/18(토)~8/5(수) — 접수가 코앞이에요!<br><br>📅 다음 주요 일정<br>• ADsP(데이터분석 준전문가) 제37회 접수: 7/6(월)~7/10(금), 시험 8/8(토) — D-22예요. 데이터 계열 자격증 준비하신다면 놓치지 마세요!</div>
+      <a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02101&scheType=03" target="_blank" rel="noopener">접수 바로가기 →</a>
+    </div>
   </div>
   <footer>매일 아침 자동 생성 · 출처는 각 '자세히 보기' 링크 참고<br>※ 투자·의료 정보는 참고용이며 판단의 책임은 본인에게 있어요.</footer>
 </div>
