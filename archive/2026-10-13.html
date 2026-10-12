@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-13</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 13일 화요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 13일 화요일이에요. 내일 저녁 나들이부터 이번 주말 수원 행사까지 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/13)
+🏠 용인문화재단이 여는 문화야시장이 내일 14일 오후 5시부터 9시까지 수지구 광교휴먼시아41단지 일대에서 열려요.
+🧸 지금 챙기면 좋은 제도예요.
+🩺 지금 챙기면 좋아요.
+📈 국민일보에 따르면 12일 코스피는 6384.24로 마감했고, 외국인이 2조 원 넘게 팔았어요.
+🎓 한국사능력검정시험 공식 페이지에 따르면 제80회 시험은 10월 17일 토요일 오전 10시 30분에 시작하고, 이번에는 심화 단계만 치러요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">용인 수지 찾아가는 문화야시장, 내일(14일) 저녁에 열려요</div></div><div class="body">용인문화재단이 여는 문화야시장이 내일 14일 오후 5시부터 9시까지 수지구 광교휴먼시아41단지 일대에서 열려요. 공연, 플리마켓, 먹거리, 주민 참여 프로그램이 준비돼 있다고 해요.</div><div class="ask">아이랑 이야기: 야시장에서 제일 먼저 먹어 보고 싶은 건 뭐야?</div><a class="more" href="https://www.gukjenews.com/news/articleView.html?idxno=3711341" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">경기 인디뮤직페스티벌이 17~18일 수원 서호잔디광장에서 열려요</div></div><div class="body">10월 17일부터 18일까지 수원 서호잔디광장에서 인디뮤직페스티벌이 열린다고 국제뉴스가 전했어요. 출연진과 입장권 같은 자세한 내용은 기사에 없어서, 가기 전에 공식 안내를 한 번 확인해 주세요.</div><div class="ask">아이랑 이야기: 야외에서 듣는 음악은 집에서 듣는 음악이랑 뭐가 다를까?</div><a class="more" href="https://www.gukjenews.com/news/articleView.html?idxno=3602273" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">동탄센트럴파크 학생동아리축제, 24일(토)에 열려요</div></div><div class="body">화성시 일정표에 따르면 10월 24일 토요일 동탄센트럴파크에서 학생동아리축제가 열려요. 학생 공연, 플리마켓, 먹거리가 있다고 해요.</div><div class="ask">아이랑 이야기: 언니 오빠들이 무대에서 뭘 보여 주면 좋을까?</div><a class="more" href="https://tour.hscity.go.kr/NEW/6festival/festival5.jsp" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">아동수당이 만 9세 미만까지 넓어졌어요</div></div><div class="body">지금 챙기면 좋은 제도예요. 보건복지부 안내에 따르면 2026년부터 아동수당 대상이 만 8세 미만에서 만 9세 미만으로 넓어졌고, 소득·재산 기준은 없어요. 월 지급액은 수도권이 10만 원이에요.</div><a class="more" href="https://www.mohw.go.kr/board.es?mid=a10503010100&amp;bid=0027&amp;act=view&amp;list_no=1490257&amp;tag=&amp;nPage=1" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">초1~2학년은 온동네 초등돌봄·교육을 이용할 수 있어요</div></div><div class="body">지금 챙기면 좋은 제도예요. 정책브리핑에 따르면 2026년부터 늘봄학교가 &#x27;온동네 초등돌봄·교육&#x27;으로 넓어져서, 초1~2학년은 희망하면 매일 2시간 무상 프로그램을 이용할 수 있다고 해요. 세부 내용은 확인이 더 필요하니 학교 안내를 함께 봐 주세요.</div><div class="ask">아이랑 이야기: 학교 끝나고 제일 하고 싶은 활동이 뭐야?</div><a class="more" href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156742678" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">어린이 무료 독감 예방접종이 진행 중이에요</div></div><div class="body">지금 챙기면 좋아요. 질병관리청은 생후 6개월부터 14세까지 어린이 독감 무료 국가예방접종을 2027년 4월 30일까지 운영한다고 안내했어요. 2회 접종이 필요한 어린이는 9월 21일부터, 1회만 필요한 어린이는 9월 28일부터 시작했어요. 우리 아이가 몇 회인지는 병원에 물어보세요.</div><div class="ask">아이랑 이야기: 주사 맞고 나면 어떤 보상을 받고 싶어?</div><a class="more" href="https://www.kdca.go.kr/kdca/3026/subview.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">어제 코스피가 3.65% 내려 6384에 마감했어요</div></div><div class="body">국민일보에 따르면 12일 코스피는 6384.24로 마감했고, 외국인이 2조 원 넘게 팔았어요. 삼성전자와 SK하이닉스도 각각 4%대 내렸다고 해요.</div><a class="more" href="https://www.kmib.co.kr/article/view.asp?arcid=9000021968&amp;cp=nv" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">원/달러 환율이 1335원대로, 약 2년 만에 가장 낮아요</div></div><div class="body">국민일보는 12일 원/달러 환율이 1335.10원으로 마감했고, 장중에는 약 2년 만에 가장 낮은 수준까지 내려갔다고 전했어요. 수출 기업이 달러를 판 물량이 배경으로 보도됐어요.</div><a class="more" href="https://www.kmib.co.kr/article/view.asp?arcid=9000021968&amp;cp=nv" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">5대 은행 5년 고정 주택담보대출 금리는 연 4.77~6.78%예요</div></div><div class="body">국민일보에 따르면 10월 8일 기준 5대 은행의 5년 고정형 주택담보대출 금리는 연 4.77~6.78%예요. 금융감독원 기준으로 4분기에 금리가 다시 정해지는 주택담보대출 잔액은 165조 원이라고 해요. 한 곳에서 나온 보도라서 정확한 수치는 은행에 확인해 보세요.</div><a class="more" href="https://www.kmib.co.kr/article/view.asp?arcid=9000021976&amp;cp=nv" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정 제80회, 17일(토) 시험 — 수험표는 17일 오전 10시까지 출력해요</div></div><div class="body">한국사능력검정시험 공식 페이지에 따르면 제80회 시험은 10월 17일 토요일 오전 10시 30분에 시작하고, 이번에는 심화 단계만 치러요. 수험표는 온라인에서 17일 오전 10시까지 출력할 수 있어요.</div><a class="more" href="https://www.historyexam.go.kr/main/examSchedChk.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">공인중개사 제37회 시험이 10월 31일(토)이에요</div></div><div class="body">Q-Net에 따르면 공인중개사 제37회 1·2차 시험은 10월 31일에 함께 치러요. 가답안은 당일 오후 Q-Net에 공개되고, 의견은 11월 6일까지 낼 수 있어요. 합격자 발표는 12월 2일 예정이에요.</div><a class="more" href="https://q-net.or.kr/man001.do?amp=&amp;gId=08&amp;gSite=L" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">오늘 저녁엔 이번 주말에 어디 갈지 아이들에게 먼저 물어봐 주세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
