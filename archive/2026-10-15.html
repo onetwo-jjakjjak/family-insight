@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-15</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 15일 목요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 15일 목요일이에요. 이번 주말 나들이와 학교 공지, 챙길 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/15)
+📰 국민일보에 따르면 14일 인구전략위원회가 향후 5년 계획을 내놨어요.
+🏠 한국소통투데이에 따르면 17일 낮 1시부터 저녁 8시까지 동탄센트럴파크에서 &#x27;화성시 생활시장화인&#x27;이 열려요.
+🧸 태장초 가정통신문에 따르면 10월 13일부터 23일(금)까지 온라인 설문으로 학생·학부모 만족도 조사를 해요.
+🩺 지금 챙기면 좋아요.
+📈 머니투데이에 따르면 14일 코스피는 0.44% 내린 6008.81로 마감해 6거래일 연속 하락했어요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">정부가 5년짜리 인구전략을 발표했어요</div></div><div class="body">국민일보에 따르면 14일 인구전략위원회가 향후 5년 계획을 내놨어요. 출산율 숫자 대신 삶의 만족도를 6.6점에서 2030년 7.0점으로 높이는 걸 대표 목표로 삼았고, 셋째 이상에게 &#x27;아이맞이지원금&#x27; 1500만 원을 준다고 해요. 한 곳의 보도라서 세부 내용은 더 확인이 필요해요.</div><a class="more" href="https://www.kmib.co.kr/article/view.asp?arcid=9000022710" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">&#x27;모두의 AI&#x27;가 12월에 누구나 무료로 나올 예정이에요</div></div><div class="body">서울경제에 따르면 SK텔레콤·KT·카카오 세 곳이 16일 비공개 시범 시연을 거쳐 12월에 일반 출시할 예정이에요. 일상에서 예약이나 생활 서비스를 AI에게 맡겨 볼 수 있게 된다고 해요.</div><div class="ask">아이랑 이야기: 말만 하면 대신 해 주는 AI 친구가 있다면 뭘 부탁하고 싶어?</div><a class="more" href="https://www.sedaily.com/article/20101684" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">17일 동탄센트럴파크에서 수공예 아트마켓이 열려요</div></div><div class="body">한국소통투데이에 따르면 17일 낮 1시부터 저녁 8시까지 동탄센트럴파크에서 &#x27;화성시 생활시장화인&#x27;이 열려요. 수공예 장터와 함께 오후 2시, 4시, 6시 30분에 야외 공연이 있고, 가족 체험도 운영된다고 해요. 입장료와 체험 내용은 기사에 없어서 주최 쪽 공지를 확인해 주세요.</div><div class="ask">아이랑 이야기: 직접 만든 물건을 팔아 본다면 뭘 만들고 싶어?</div><a class="more" href="https://www.kbcs.kr/news/article.html?no=428645" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">17일 용인시청에서 반려동물 문화축제가 열려요</div></div><div class="body">서울경제와 파이낸셜뉴스에 따르면 17일 오전 10시부터 오후 5시까지 용인시청 하늘광장에서 &#x27;용인시와 행복하개&#x27;가 열려요. 캐리커처·이름표 만들기 같은 체험 부스와 수의사 무료 상담, 유기동물 입양 부스가 있어요. 입장료와 사전 신청 여부는 기사에 없어요.</div><div class="ask">아이랑 이야기: 강아지가 말을 할 수 있다면 제일 먼저 뭐라고 할까?</div><a class="more" href="https://m.sedaily.com/article/20101272" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">에버랜드에서 아기 카피바라 세쌍둥이를 만날 수 있어요</div></div><div class="body">파이낸셜뉴스에 따르면 에버랜드가 9월 28일에 태어난 카피바라 세쌍둥이를 15일부터 동물원 뿌빠타운에서 공개했어요. 아기들 상태에 따라 공개 시간과 장소가 바뀔 수 있고, 입장권이 필요한 곳이라 요금은 공식 안내를 확인해 주세요.</div><div class="ask">아이랑 이야기: 아기 카피바라 세 마리에게 이름을 지어 준다면?</div><a class="more" href="https://www.fnnews.com/news/202610140949104036" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초 초1~2 맞춤형 프로그램 만족도 조사가 23일까지예요</div></div><div class="body">태장초 가정통신문에 따르면 10월 13일부터 23일(금)까지 온라인 설문으로 학생·학부모 만족도 조사를 해요. 초등 1~2학년 대상이라 8세 딸이 해당돼요. 세부 내용은 첨부 이미지에 있어서 가정통신문에서 한 번 더 확인해 주세요.</div><div class="ask">아이랑 이야기: 방과후 시간에 제일 재미있는 건 뭐야?</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttInfo.do?mi=5578&amp;bbsId=3469&amp;nttSn=593251" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">아동수당이 만 9세 미만으로 넓어졌어요</div></div><div class="body">지금 챙기면 좋아요. 보건복지부 정책브리핑에 따르면 2026년부터 아동수당 대상이 만 9세 미만으로 넓어졌고, 수도권은 월 10만 원이에요. 수급 여부는 복지로나 주민센터에서 확인하고, 신청 안내 문자 속 링크는 사기일 수 있으니 누르지 마세요.</div><a class="more" href="https://www.korea.kr/news/policyNewsView.do?newsId=148961693" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">생후 6개월~14세는 독감 예방접종이 무료예요</div></div><div class="body">지금 챙기면 좋아요. 질병관리청은 올해 독감 국가예방접종을 앞당겨 9월 21일부터 시작했고, 생후 6개월~14세 어린이와 임신부는 무료라고 안내했어요. 접종 횟수는 이전 접종 기록에 따라 달라서 예방접종도우미에서 확인해 보세요. 종료일은 확인이 더 필요해요.</div><div class="ask">아이랑 이야기: 주사 맞을 때 용기 내는 나만의 비법이 있어?</div><a class="more" href="https://www.kdca.go.kr/bbs/kdca/42/312642/artclView.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">올해 건강검진은 12월 31일까지 받을 수 있어요</div></div><div class="body">지금 챙기면 좋아요. 국민건강보험공단은 일반건강검진 기간을 매년 1월 1일부터 12월 31일까지로 안내했고, 작년에 못 받았다면 추가로 신청할 수 있다고 해요. 대상 여부는 건강보험 누리집의 &#x27;건강검진 대상조회&#x27;에서 확인할 수 있어요.</div><a class="more" href="https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">코스피가 6거래일 연속 내려 6008에 마감했어요</div></div><div class="body">머니투데이에 따르면 14일 코스피는 0.44% 내린 6008.81로 마감해 6거래일 연속 하락했어요. 전날 5.46% 급락에 이어 외국인이 이날도 1조 원 넘게 팔았다고 해요.</div><a class="more" href="https://www.mt.co.kr/stock/2026/10/15/2026101419494517521" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">기능사 제4회 실기 원서접수가 오늘(15일) 마감이에요</div></div><div class="body">Q-Net에 따르면 기능사 제4회 실기 접수는 10월 12일부터 15일까지예요. 기사 제3회 빈자리 접수는 18일부터 19일까지 열려요. 실기 시험일은 공식 페이지에서 확인이 안 돼 적지 않았어요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103&amp;gSite=Q&amp;gId=&amp;CST_ID=CRF_Stns_06" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">빅데이터분석기사 제13회 실기 접수가 10월 26~30일이에요</div></div><div class="body">데이터자격검정 일정표에 따르면 접수는 10월 26일부터 30일까지고, 시험은 11월 28일(토)이에요. 최종 발표는 12월 18일이에요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">오늘도 아이 손 한 번 더 꼭 잡아 주는 하루 보내세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
