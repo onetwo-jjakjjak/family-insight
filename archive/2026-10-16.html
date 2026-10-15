@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-16</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 16일 금요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 16일 금요일이에요. 이번 주말 공연 나들이와 신청 기한 있는 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/16)
+🏠 화성저널에 따르면 제18회 품앗이공연예술축제가 16일부터 18일까지 화성시 우정읍 민들레연극마을에서 열려요.
+🧸 수원시동부육아종합지원센터는 &#x27;자녀와 대화법&#x27; 무료 부모교육 신청을 10월 23일(금) 18시까지 받는다고 안내했어요.
+🩺 질병관리청은 15일 조사 결과를 발표하면서 물과 비누로 30초간 손씻기를 습관화하자고 안내했어요.
+📈 조선일보와 중앙일보에 따르면 15일 코스피는 7.57% 내린 5554.22로 마감해 7거래일 연속 하락했어요.
+🎓 데이터자격검정 일정에 따르면 접수는 오늘(16일) 18시까지예요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">화성 민들레연극마을에서 어린이 공연을 볼 수 있어요</div></div><div class="body">화성저널에 따르면 제18회 품앗이공연예술축제가 16일부터 18일까지 화성시 우정읍 민들레연극마을에서 열려요. 〈페이퍼 시어터〉(5세 이상, 1만 원)는 17일 11시·15시, 18일 15시에 있고, 17일엔 무료 어린이 공연도 있어요. 유료 공연은 예매가 필요하고, 18일 비 예보는 확인이 더 필요해요.</div><div class="ask">아이랑 이야기: 종이로 이야기를 만든다면 어떤 주인공이 나올까?</div><a class="more" href="https://www.hsj.co.kr/news/articleView.html?idxno=56182" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">용인중앙시장에서 16~18일 청년 페스타가 열려요</div></div><div class="body">용인시 공식 게시물에 따르면 &#x27;다닥다닥×용인중앙시장&#x27; 페스타가 16일부터 18일까지 용인중앙시장 일대에서 열려요. 시간표와 아이용 프로그램이 있는지는 확인이 안 돼서, 가기 전에 시청 공지를 한 번 봐 주세요.</div><a class="more" href="https://www.yongin.go.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1001&amp;q_clCode=1&amp;q_bbscttSn=20261014173113612" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">수원 동부육아종합지원센터 부모교육 신청이 23일 18시까지예요</div></div><div class="body">수원시동부육아종합지원센터는 &#x27;자녀와 대화법&#x27; 무료 부모교육 신청을 10월 23일(금) 18시까지 받는다고 안내했어요. 교육은 27일(화) 10시 30분부터 12시 30분까지 센터 4층에서 열리고, 수집 시점엔 4자리가 남아 있었어요. 6세 딸 양육자라면 지금 확인해 보세요.</div><a class="more" href="https://www.swescc.or.kr/parent/AppParents_view.asp?sn=121&amp;the_day=2026-10-27" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">2027학년도 유치원 신청이 11월 2일부터 시작돼요</div></div><div class="body">교육부는 15일 유보통합포털에서 어린이집·유치원을 함께 찾고 &#x27;찜하기&#x27;로 저장해 바로 신청할 수 있게 바꿨다고 발표했어요. 찜하기는 10월 28일부터, 입소·입학 신청은 11월 2일부터예요. 기관 이동 계획이 있는 집만 해당되고, 기관별 자격과 마감은 포털 공지로 다시 확인해 주세요.</div><a class="more" href="https://www.mt.co.kr/policy/2026/10/15/2026101509490422200" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초 늘봄학교에 2학기 수업공개 일정 안내가 올라왔어요</div></div><div class="body">태장초 늘봄학교 게시판에 14일 &#x27;방과후·맞춤형프로그램 2학기 수업공개 일정 안내&#x27;가 올라왔어요. 맞춤형프로그램은 초등 1~2학년이 대상이라 8세 딸이 해당될 수 있어요. 날짜와 참여 대상은 본문을 확인하지 못해서, 게시판에서 직접 봐 주세요.</div><div class="ask">아이랑 이야기: 엄마 아빠가 수업을 보러 오면 어떤 걸 보여 주고 싶어?</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=5761&amp;bbsId=3590" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">질병관리청은 비누로 30초 손씻기를 권고했어요</div></div><div class="body">질병관리청은 15일 조사 결과를 발표하면서 물과 비누로 30초간 손씻기를 습관화하자고 안내했어요. 조사에서 30초 이상 올바르게 씻는 비율은 11.4%였고 평균 손씻기 시간은 13.9초였어요. 외출 후, 식사 전에 가족이 함께 맞춰 보세요.</div><div class="ask">아이랑 이야기: 30초 동안 부를 수 있는 손씻기 노래를 같이 만들어 볼까?</div><a class="more" href="https://www.kdca.go.kr/bbs/kdca/42/312943/artclView.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">식약처가 농약 기준을 넘긴 고춧가루 회수를 발표했어요</div></div><div class="body">식품의약품안전처는 14일 잔류농약 기준 초과 고춧가루 회수 조치를 발표했어요. 보도에 따르면 경기 화성 업체가 유통한 &#x27;홍초고춧가루&#x27;(제조일자 2026.8.14 표시, 1kg)가 대상이에요. 제품 세부는 식약처 원문에서 다시 확인하고, 집에 있다면 구입처에 문의해 주세요.</div><a class="more" href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50408" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">코스피가 7거래일 연속 내려 5554에 마감했어요</div></div><div class="body">조선일보와 중앙일보에 따르면 15일 코스피는 7.57% 내린 5554.22로 마감해 7거래일 연속 하락했어요. 어제 6008에서 하루 만에 더 내려갔고, 원인으로 미국 금리 인상 가능성과 AI 투자 수익성 우려가 꼽혔어요.</div><a class="more" href="https://www.chosun.com/economy/economy_general/2026/10/16/2XWF6K5KPVAJ7CEGP24HVBVYSE/" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">증시가 불안하자 은행 예금으로 돈이 몰리고 있대요</div></div><div class="body">동아일보에 따르면 5대 은행 총수신이 14일 기준 전월 말보다 37조 원 넘게 늘었다고 해요. 신한 정기예금은 최고 연 4% 수준으로 알려졌어요. 한 곳의 보도라서 수치는 더 확인이 필요해요.</div><a class="more" href="https://www.donga.com/news/Economy/article/all/20261015/134850658/2" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">SQLD 제63회 원서접수가 오늘 18시에 마감돼요</div></div><div class="body">데이터자격검정 일정에 따르면 접수는 오늘(16일) 18시까지예요. 접수 후 2시간 안에 결제하지 않으면 자동 취소돼요. 시험은 11월 14일(토) 10시예요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">기능사 상시 제21회 실기 접수도 오늘 18시까지예요</div></div><div class="body">Q-Net 원서접수현황에 따르면 2026년 상시 기능사 제21회 실기 접수는 15일 10시부터 오늘 18시까지예요.</div><a class="more" href="https://www.q-net.or.kr/rcv003.do?id=rcv00301&amp;gSite=Q&amp;gId=" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">제80회 한국사능력검정시험이 내일(17일) 열려요</div></div><div class="body">국사편찬위원회 일정에 따르면 17일(토) 10시에 심화(1~3급)만 시행해요. 사진 등록·변경은 내일 10시까지 마감이에요.</div><a class="more" href="https://www.historyexam.go.kr/main/examSchedChk.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">주말엔 아이와 같이 웃는 시간, 꼭 하나만 챙겨 보세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
