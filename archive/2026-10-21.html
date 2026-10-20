@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-21</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 21일 수요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 21일 수요일이에요. 이번 주말 나들이 소식과 챙길 신청 일정을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/21)
+🏠 10월 24일(토) 오전 9시 30분부터 밤 9시까지 일월수목원 잔디마당에서 열려요.
+🧸 수원교육지원청은 10월 22일 자연여행(농장) 프로그램을 온동네 돌봄·교육센터 1·2호점을 이용하는 초1~3 학생 72명 대상으로 운영한다…
+🩺 질병관리청은 쯔쯔가무시증이 10~11월에 특히 많다고 안내했어요.
+📈 SBS와 동아일보에 따르면 20일 코스피는 3.73% 내린 5,552.74로 마감했고, 장중엔 5,500선이 잠깐 무너졌어요.
+🎓 한국데이터산업진흥원 일정에 따르면 실기 원서접수는 10월 26일부터 30일까지 5일간이에요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">24일(토) 수원수목원 가을꽃축제가 열려요</div></div><div class="body">10월 24일(토) 오전 9시 30분부터 밤 9시까지 일월수목원 잔디마당에서 열려요. 오전 11시부터 오후 5시까지 허브 향주머니, 압화 열쇠고리 만들기 같은 체험이 있고, 오후 3시부터는 가든 음악회가 이어져요. 참가비와 예약 여부는 기사에 없어서, 가기 전에 확인해 주세요.</div><div class="ask">아이랑 이야기: 직접 만든 향주머니는 누구에게 선물하고 싶어?</div><a class="more" href="http://www.surprisenews.kr/news/articleView.html?idxno=711623" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">24~25일 용인농촌테마파크에서 가을 축제가 열려요</div></div><div class="body">용인특례시가 10월 24일과 25일 처인구 원삼면 용인농촌테마파크에서 도농 어울림 가을 축제를 연다고 해요. 연근 캐기, 테라리움 만들기, 마술·버블쇼, 지역 농산물 장터가 있어요. 영통에서는 거리가 있으니 체험비와 예약 여부를 먼저 확인해 보세요.</div><div class="ask">아이랑 이야기: 연근은 땅속에서 어떤 모양으로 자랄까?</div><a class="more" href="https://www.dailian.co.kr/news/view/1703009" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">주말 날씨는 토요일 구름 조금, 일요일 수원 13~22도예요</div></div><div class="body">기상청 중기예보에 따르면 토요일(24일)은 서울·인천·경기에 가끔 구름이 많겠어요. 일요일(25일) 수원은 최저 13도, 최고 22도이고 구름이 많으며 강수확률은 20~30%로 알려졌어요. 중기예보라 바뀔 수 있으니 나가기 전날과 당일 아침에 다시 확인해 주세요.</div><div class="ask">아이랑 이야기: 아침엔 쌀쌀하고 낮엔 따뜻하면 옷을 어떻게 입으면 좋을까?</div><a class="more" href="https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">수원 &#x27;가을 ON!&#x27; 농장 체험, 내일(22일) 초1~3 대상이에요</div></div><div class="body">수원교육지원청은 10월 22일 자연여행(농장) 프로그램을 온동네 돌봄·교육센터 1·2호점을 이용하는 초1~3 학생 72명 대상으로 운영한다고 해요. 센터를 이용하지 않으면 해당되지 않을 수 있어요. 신청 방법과 마감은 기사에 없어서 확인이 더 필요해요.</div><div class="ask">아이랑 이야기: 농장에 가면 어떤 동물과 채소를 만나고 싶어?</div><a class="more" href="https://www.newsview.co.kr/312091" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">질병관리청은 가을 야외활동 뒤 쯔쯔가무시증을 조심하라고 안내했어요</div></div><div class="body">질병관리청은 쯔쯔가무시증이 10~11월에 특히 많다고 안내했어요. 야외활동 후에는 바로 옷을 털어 세탁하고 샤워하며, 몸에 벌레 물린 자국(검은 딱지)이 없는지 확인하라고 권고했어요. 증상이 생기면 의료기관 진료를 받으라고 해요. 지금 챙기면 좋은 상시 수칙이에요.</div><div class="ask">아이랑 이야기: 풀밭에서 놀고 온 날엔 집에 와서 제일 먼저 뭘 하면 좋을까?</div><a class="more" href="https://www.kdca.go.kr/kdca/3396/subview.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">20일 코스피가 3.73% 내려 5,552.74에 마감했어요</div></div><div class="body">SBS와 동아일보에 따르면 20일 코스피는 3.73% 내린 5,552.74로 마감했고, 장중엔 5,500선이 잠깐 무너졌어요. 원인으로 AI 수익성 우려, 해외 금리 상승, 반도체 쏠림이 거론됐어요. 숫자에 놀라기보다 큰 흐름만 가볍게 봐 주세요.</div><a class="more" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008807038" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">주택담보대출 한도를 더 줄인다는 메시지는 가짜라고 해요</div></div><div class="body">파이낸셜뉴스에 따르면 오늘 카카오톡 등에 정부가 대출 한도를 추가로 제한한다는 메시지가 돌았어요. 이억원 금융위원장은 전면 허위라며 수사를 의뢰하겠다고 했고, 청와대도 가짜뉴스라고 밝혔어요. 한 곳의 보도라서 세부 내용은 더 확인이 필요해요.</div><a class="more" href="https://www.fnnews.com/news/202610210019304880" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">빅데이터분석기사 제13회 실기 접수가 26일(월)부터예요</div></div><div class="body">한국데이터산업진흥원 일정에 따르면 실기 원서접수는 10월 26일부터 30일까지 5일간이에요. 시험은 11월 28일(토), 합격자 발표는 12월 18일 예정이에요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">공인중개사 제37회 시험이 10월 31일(토)이에요</div></div><div class="body">Q-Net 일정에 따르면 1·2차 시험이 31일에 치러져요. 빈자리 접수는 10월 1~2일에 끝나 추가 접수는 없어요. 수험표와 시험장을 미리 확인하세요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정시험 제81회 접수가 11월 3일부터예요</div></div><div class="body">국사편찬위원회 일정에 따르면 접수는 11월 3일 10시부터 10일 17시까지예요. 지역별로 시작 시각이 달라 경기·인천은 11월 3일이에요. 시험은 11월 28일(토)이고 올해 남은 회차는 심화(1~3급)만 있어요. 지역별 일정은 원문 확인이 더 필요해요.</div><a class="more" href="https://www.historyexam.go.kr/main/examSchedChk.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">주말엔 아이 손을 잡고 가을 햇살 아래 천천히 걸어 보세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
