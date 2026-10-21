@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-22</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 22일 목요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 22일 목요일이에요. 이번 주말 나들이 후보와 챙기면 좋은 건강 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/22)
+📰 방송미디어통신심의위원회가 10월 21일 AI 채팅 서비스 15개 사업자와 간담회를 열었어요.
+🏠 수원특례시가 10월 24일(토) 오전 10시부터 오후 5시까지 광교중앙공원에서 열어요.
+🩺 질병관리청은 2026~27절기 인플루엔자 국가예방접종을 2026년 9월 21일부터 2027년 4월 30일까지 한다고 안내했어요.
+📈 서울신문에 따르면 21일 코스피는 3.29% 올라 5,735.66으로 마감했어요.
+🎓 큐넷 일정에 따르면 면접 접수는 10월 19일부터 23일까지예요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">AI 채팅 서비스 청소년 보호, 11월에 본격 심의해요</div></div><div class="body">방송미디어통신심의위원회가 10월 21일 AI 채팅 서비스 15개 사업자와 간담회를 열었어요. 유해한 내용을 걸러내고 청소년과 성인을 구분해 표시하며 본인인증 우회를 점검해 달라고 요청했고, 11월에 심의를 이어갈 예정이라고 해요. 한 곳의 보도라서 세부 내용은 더 확인이 필요해요.</div><div class="ask">아이랑 이야기: 인터넷에서 낯선 말이나 이상한 그림을 보면 누구한테 먼저 말하면 좋을까?</div><a class="more" href="https://zdnet.co.kr/view/?no=20261021192631" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">24일(토) 광교중앙공원에서 반려동물 한마음 축제가 열려요</div></div><div class="body">수원특례시가 10월 24일(토) 오전 10시부터 오후 5시까지 광교중앙공원에서 열어요. 반려견 달리기, 패션쇼, 견공올림픽과 체험 부스, 입양카페, 프리마켓이 있어서 반려동물이 없어도 구경하기 좋아요. 참가비와 연령 제한은 기사에 없으니 가기 전에 확인해 주세요.</div><div class="ask">아이랑 이야기: 강아지랑 친구가 되려면 어떻게 다가가야 할까?</div><a class="more" href="https://www.newspim.com/news/view/20261021000867" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">화성행궁 야간개장 &#x27;달빛화담&#x27;이 11월 1일까지 이어져요</div></div><div class="body">금·토·일요일과 공휴일 저녁 6시부터 9시 30분까지 열리고, 입장은 9시까지예요. 관람료는 어린이 1,000원, 성인 2,000원이에요. 야외 야간 행사라 비와 기온은 출발 전에 확인해 주세요.</div><div class="ask">아이랑 이야기: 밤에 보는 궁은 낮과 어떻게 다를 것 같아?</div><a class="more" href="https://www.suwon.go.kr/culture/ingCultureView.do?ctrSeqNo=2059&amp;listType=main" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">동탄호수공원 루나쇼가 24일과 31일 저녁에 열려요</div></div><div class="body">화성시 동탄구 안내에 따르면 10월 24일(토)과 31일(토) 저녁 8시부터 8시 30분까지예요. 6세 아이에게는 늦은 시간이라 컨디션을 보고 고르면 좋아요. 무료 여부와 주최는 안내에 없어서 확인이 더 필요해요.</div><a class="more" href="https://www.hscity.go.kr/dongtan/index.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">질병관리청은 올해 독감 무료 접종 대상이 14세까지라고 안내했어요</div></div><div class="body">질병관리청은 2026~27절기 인플루엔자 국가예방접종을 2026년 9월 21일부터 2027년 4월 30일까지 한다고 안내했어요. 생후 6개월~14세 어린이가 대상이고, 9세 미만은 접종 이력에 따라 2회 접종 대상일 수 있다고 해요. 지금 챙기면 좋은 상시 안내예요. 어르신 시작일은 바뀐 적이 있으니 예방접종도우미에서 확인해 주세요.</div><div class="ask">아이랑 이야기: 주사가 조금 무서워도 맞고 나면 어떤 점이 좋을까?</div><a class="more" href="https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">식약처가 벤조피렌이 기준을 넘은 들기름 회수를 발표했어요</div></div><div class="body">식품의약품안전처는 10월 21일 경기 구리시 성림방앗간이 만든 들기름이 벤조피렌 기준을 넘어 회수 조치됐다고 발표했어요. 집에 들기름이 있다면 식약처 원문의 제품명과 제조일자를 비교해 보세요. 제품 정보와 검출 수치는 첨부 원문에서 확인이 더 필요해요.</div><a class="more" href="https://mfds.go.kr/brd/m_99/view.do?seq=50428" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">21일 코스피가 반등했고 원·달러 환율은 2년 만에 가장 낮아졌어요</div></div><div class="body">서울신문에 따르면 21일 코스피는 3.29% 올라 5,735.66으로 마감했어요. 원·달러 환율은 주간 종가 1,325.2원으로 2024년 10월 이후 약 2년 만에 가장 낮다고 해요. 해외여행이나 환전 계획이 있다면 참고해 보세요.</div><a class="more" href="https://www.seoul.co.kr/news/economy/2026/10/21/20261021500227" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">서울 아파트 월세 비중이 처음으로 51%를 넘었어요</div></div><div class="body">세계일보에 따르면 올해 1~9월 서울 아파트 전월세 거래 중 월세 비중이 51%로, 2011년 통계 집계 이후 처음 절반을 넘었어요. 전세에서 월세로 옮겨가는 흐름이 뚜렷하다는 뜻이에요. 한 곳의 보도라서 원자료는 더 확인이 필요해요.</div><a class="more" href="https://www.segye.com/newsView/20261020524438" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국어교육능력검정시험 제21회 면접 접수가 내일(23일) 마감이에요</div></div><div class="body">큐넷 일정에 따르면 면접 접수는 10월 19일부터 23일까지예요. 마감 시각은 페이지에서 확인하지 못했으니 오늘 안에 접수하는 게 안전해요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">토요일엔 따뜻하게 입고 아이 손 잡고 가을 속으로 나가 보세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
