@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-27</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 27일 화요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 27일 화요일이에요. 이번 토요일(31일) 동탄 나들이 후보와 챙길 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/27)
+📰 과기정통부가 11월 6일까지 &#x27;모두의 AI&#x27; 정책 브랜드명(5자 이내)과 슬로건(20자 이내)을 공모해요.
+🏠 화성시가 10월 31일 동탄호수공원 운답원 일원에서 루나빛축제를 열어요.
+🩺 식품의약품안전처는 10월 26일 감미료를 쓴 저당 식품에는 혈당 관련 기능성 표시를 제한한다고 발표했어요.
+📈 MBC 보도에 따르면 26일 원/달러 환율은 1,323.1원으로 약 2년 만에 가장 낮았어요.
+🎓 데이터자격검정 일정에 따르면 접수는 10월 26일부터 30일 오후 6시까지로 5일뿐이에요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">&#x27;모두의 AI&#x27; 이름과 슬로건을 국민에게 공모해요</div></div><div class="body">과기정통부가 11월 6일까지 &#x27;모두의 AI&#x27; 정책 브랜드명(5자 이내)과 슬로건(20자 이내)을 공모해요. 결과는 11월 16일에 발표되고, 대상 1점에 상금 200만 원 등 6점에 총 550만 원이에요. 이 서비스는 SK텔레콤·카카오·KT 컨소시엄이 맡았고 연내 정식 출시를 준비 중이라고 해요.</div><div class="ask">아이랑 이야기: 모두가 쓰는 똑똑한 친구에게 이름을 지어 준다면 뭐라고 부르고 싶어?</div><a class="more" href="https://zdnet.co.kr/view/?no=20261026102730" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">31일(토) 동탄호수공원에서 루나빛축제가 열려요</div></div><div class="body">화성시가 10월 31일 동탄호수공원 운답원 일원에서 루나빛축제를 열어요. 빛 놀이터 같은 체험은 오후 1시부터, 본행사는 오후 4~9시이고, 7시 개막식에 어린이 뮤지컬이, 7시 40분에 어린이 그림 공모전 선정작을 활용한 드론 500대 공연이 있어요. 입장료와 사전예약 여부는 기사에 없어서 가기 전에 확인해 보세요.</div><div class="ask">아이랑 이야기: 밤하늘에 드론이 그림을 그린다면 어떤 그림이 보고 싶어?</div><a class="more" href="https://www.newspim.com/news/view/20261026000807" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">주말 수원 날씨가 새로 나왔어요, 토요일 맑고 일요일 흐려요</div></div><div class="body">기상청 중기예보(26일 저녁 발표)에 따르면 수원은 10월 31일(토) 맑고 최저 5도·최고 13도예요. 11월 1일(일)은 흐리고 강수확률 30%, 최저 2도·최고 11도예요. 저녁 행사엔 아이 외투를 꼭 챙기고, 일요일 야외 일정은 전날 한 번 더 확인해 주세요.</div><div class="ask">아이랑 이야기: 추운 저녁에 밖에서 오래 구경하려면 뭘 챙기면 좋을까?</div><a class="more" href="https://www.weather.go.kr/w/forecast/overall/mid-term.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">식약처가 감미료 쓴 저당 식품의 &#x27;혈당&#x27; 기능성 표시를 제한해요</div></div><div class="body">식품의약품안전처는 10월 26일 감미료를 쓴 저당 식품에는 혈당 관련 기능성 표시를 제한한다고 발표했어요. 언론 보도에 따르면 시행은 2028년 1월 1일부터이고, 감미료 없이 저당 기준을 채운 식품만 표시할 수 있어요. 식약처는 감미료 사용이나 저당 식품 판매 자체를 막는 건 아니라고 설명했어요.</div><a class="more" href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50437" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">원/달러 환율이 1,323원대로 내려 5주 연속 하락했어요</div></div><div class="body">MBC 보도에 따르면 26일 원/달러 환율은 1,323.1원으로 약 2년 만에 가장 낮았어요. 반도체 수출로 들어오는 달러가 원화를 끌어올렸다는 설명이에요. 해외여행이나 환전 계획이 있다면 참고하되, 한 곳의 보도라 큰 흐름만 봐 주세요.</div><a class="more" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6860855_37004.html" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">26일 코스피가 5,469.47로 마감했어요, 7개월 만의 최저예요</div></div><div class="body">YTN에 따르면 26일 코스피는 1.46% 내려 4월 6일 이후 종가 기준 가장 낮았어요. 외국인이 약 6,900억 원을 순매도했고 기관과 개인은 순매수했어요. 숫자에 놀라기보다 이번 주 발표 결과를 보고 큰 흐름만 봐 주세요.</div><a class="more" href="https://www.ytn.co.kr/_ln/0102_202610262253174151" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">변동금리 주택담보대출이 4.42~6.795%로 올랐어요</div></div><div class="body">서울경제 보도에 따르면 23일 기준 5대 은행 변동 주담대 금리는 4.42~6.795%로 9월 말보다 올랐어요. 9월 COFIX도 3.43%로 약 2년 3개월 만에 가장 높아요. 대출이 있다면 금리 방식을 한 번 확인해 보세요. 한 곳의 보도라 세부 수치는 은행 공지로 확인해 주세요.</div><a class="more" href="https://www.sedaily.com/article/20106032?ref=naver" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">빅데이터분석기사 제13회 실기 접수가 30일(금) 오후 6시까지예요</div></div><div class="body">데이터자격검정 일정에 따르면 접수는 10월 26일부터 30일 오후 6시까지로 5일뿐이에요. 시험은 11월 28일(토), 합격 예정자 발표는 12월 18일이에요. 시험 연기 제도는 없다고 해요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정시험 제81회 접수가 11월 3일(화)부터예요</div></div><div class="body">국사편찬위원회에 따르면 제81회는 11월 28일(토) 심화(1~3급)만 치러요. 접수는 11월 3일 오전 10시부터 10일 오후 5시까지이고, 인천·경기는 3일 오전 10시~4일 오전 9시 우선 구간이 있어요. 취소 좌석 접수는 11월 11~13일이에요.</div><a class="more" href="https://www.historyexam.go.kr/main/examSchedChk.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">화요일 아침, 아이와 이번 토요일 밤 빛 구경을 어떻게 입고 갈지 이야기해 보세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
