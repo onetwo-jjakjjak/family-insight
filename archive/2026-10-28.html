@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-10-28</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 10월 28일 수요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 10월 28일 수요일이에요. 이번 주말 날씨가 새로 나왔고, 챙길 학교 공지와 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (10/28)
+📰 27일 AI가 작곡하고 노래한 곡이 멜론 톱100 2위에 올랐어요.
+🏠 기상청 중기예보(27일 저녁 발표)에 따르면 10월 31일(토)은 전국이 맑고, 11월 1일(일)은 흐리다가 오후에 비가 와요.
+🧸 태장초 돌봄 게시판에 &#x27;돌봄교실 수익자 부담금 정산보고(2분기)&#x27;가 10월 27일 새로 올라왔어요.
+📈 27일 코스피는 168.87포인트 올라 4거래일 만에 반등했고, 삼성전자는 4.23%, SK하이닉스는 5.18% 올랐어요.
+🎓 데이터자격검정 일정에 따르면 접수는 10월 26일부터 30일 오후 6시까지예요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">AI가 만든 노래가 멜론 차트 2위에 올랐어요</div></div><div class="body">27일 AI가 작곡하고 노래한 곡이 멜론 톱100 2위에 올랐어요. 지금의 AI 표시 의무는 AI 사업자에게만 적용되는데, 과기정통부가 대상을 넓히는 법 개정을 검토 중이라고 뉴스1이 보도했어요. 구체안과 일정은 아직 공개되지 않았고 한 곳의 보도라서 참고만 해 주세요.</div><div class="ask">아이랑 이야기: 노래를 사람이 아니라 AI가 만들었다고 알려 주면 어떤 기분일 것 같아?</div><a class="more" href="https://www.news1.kr/it-science/internet-platform/6333828" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">정부가 2030년까지 AI 로봇 1만5000대를 공공구매할 계획이에요</div></div><div class="body">김정관 산업통상부 장관이 한국경제 기고에서 밝힌 계획이에요. 내년에 먼저 약 1,700대를 국방·소방·경찰, 농업·돌봄, 교육·문화 현장에 보급한다고 해요. 장관 본인 기고 한 곳의 내용이라서 참고만 해 주세요.</div><div class="ask">아이랑 이야기: 로봇이 학교나 도서관에서 도와준다면 어떤 일을 해 주면 좋을까?</div><a class="more" href="https://www.hankyung.com/article/2026102786241" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">주말 예보가 바뀌었어요, 토요일 맑고 일요일 오후엔 비가 와요</div></div><div class="body">기상청 중기예보(27일 저녁 발표)에 따르면 10월 31일(토)은 전국이 맑고, 11월 1일(일)은 흐리다가 오후에 비가 와요. 경기 강수확률은 일요일 오전 30%, 오후 60%이고, 전국 아침 기온은 1~11도, 낮은 11~20도예요. 중기예보라 비 오는 시간과 지역이 바뀔 수 있고 수원만의 기온은 확인하지 못했으니, 나가기 전에 다시 확인해 주세요.</div><div class="ask">아이랑 이야기: 비 오는 날 집에서 하면 재미있는 놀이는 뭐가 있을까?</div><a class="more" href="https://www.weather.go.kr/w/forecast/overall/mid-term.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초 돌봄교실 부담금 2분기 정산보고가 올라왔어요</div></div><div class="body">태장초 돌봄 게시판에 &#x27;돌봄교실 수익자 부담금 정산보고(2분기)&#x27;가 10월 27일 새로 올라왔어요. 제목과 날짜만 확인했고 정산 금액 같은 본문은 확인하지 못했어요. 돌봄교실을 이용한다면 게시판에서 직접 열어 봐 주세요.</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=19939&amp;bbsId=11433" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">27일 코스피가 3.09% 올라 5,638.34에 마감했어요</div></div><div class="body">27일 코스피는 168.87포인트 올라 4거래일 만에 반등했고, 삼성전자는 4.23%, SK하이닉스는 5.18% 올랐어요. 서울신문과 머니투데이가 보도했고, 오전엔 매수 사이드카도 발동됐어요. 숫자에 놀라기보다 이번 주 발표 결과를 보고 큰 흐름만 봐 주세요.</div><a class="more" href="https://www.seoul.co.kr/news/economy/securities/2026/10/28/20261028031002" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">국고채 3년 금리가 3.758%로 내려 2개월여 만에 가장 낮아요</div></div><div class="body">27일 3년 만기 국고채 금리는 전일보다 3.1bp 내린 연 3.758%로 마감했어요. 8월 27일 이후 가장 낮은 수준이에요. 대출이 있다면 금리 방식을 한 번 확인해 보세요.</div><a class="more" href="http://www.kjdaily.com/article.php?aid=1793113940690449276" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">올해 1인당 국민소득이 4만 달러대에 들어설 전망이에요</div></div><div class="body">재경부는 올해 1인당 GNI가 4만 달러대에 진입할 것으로 내다봤어요. 1~9월 평균 환율 1,463원이 연말까지 이어지면 4만3500달러가 된다고 해요. 환율 수준이 소득 숫자에 영향을 준다는 점도 함께 보도됐어요.</div><a class="more" href="https://www.hankyung.com/article/202610277908i" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">빅데이터분석기사 제13회 실기 접수가 30일(금) 오후 6시 마감이에요</div></div><div class="body">데이터자격검정 일정에 따르면 접수는 10월 26일부터 30일 오후 6시까지예요. 수험표는 11월 13일, 시험은 11월 28일(토), 합격 예정자 발표는 12월 18일이에요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">수요일 아침, 아이와 이번 토요일에 어디서 무엇을 할지 함께 정해 보세요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
