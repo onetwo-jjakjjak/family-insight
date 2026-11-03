@@ -1,0 +1,75 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-04</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 4일 수요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 4일 수요일이에요. 태장초에서 온 신청 안내와 이번 주말 나들이 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/4)
+🏠 기상청 중기예보에 따르면 8일(일) 수원은 최저 0도·최고 8도에 구름이 많고, 강수확률은 오전 20%·오후 30%예요.
+🧸 11월 3일 가정통신문으로 1~5학년 방과후 프로그램 수요조사와 1학년 대상 맞춤형 프로그램 수요조사를 함께 안내했어요.
+📈 머니투데이에 따르면 코스닥도 4.08% 내려 704.39로 마감했어요.
+🎓 국사편찬위원회 일정에 따르면 시험은 11월 28일(토) 오전 10시이고 접수는 10일(화) 17시까지예요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">일요일(8일) 수원은 아침 0도, 낮 8도로 추워요</div></div><div class="body">기상청 중기예보에 따르면 8일(일) 수원은 최저 0도·최고 8도에 구름이 많고, 강수확률은 오전 20%·오후 30%예요. 강수확률은 서울·인천·경기 전체 값이고 수원만의 수치는 아니에요. 토요일(7일) 수원 수치는 없고 전국적으로 대체로 맑다고만 나와요. 일요일엔 아이 겉옷과 작은 우산을 챙겨 주세요.</div><div class="ask">아이랑 이야기: 아침이 아주 추운 날엔 뭘 입고 나가면 좋을까?</div><a class="more" href="https://www.weather.go.kr/w/weather/forecast/mid-term.do?stnId1=109" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">수원 일월·영흥수목원 특별전이 11월 15일에 끝나요</div></div><div class="body">수원시 안내에 따르면 일월수목원 &#x27;엄지공주&#x27;와 영흥수목원 &#x27;헨젤과그레텔&#x27; 전시가 모두 15일(일)까지예요. 일월수목원은 어린이(7~12세) 1,500원이고 6세 이하는 무료예요(증빙서류 필요). 영흥수목원 입장료는 확인하지 못했어요. 전시온실이 있어서 날씨가 궂은 날 가기 좋아요.</div><div class="ask">아이랑 이야기: 엄지공주처럼 꽃 속에서 살면 어떤 하루일까?</div><a class="more" href="https://www.suwon.go.kr/culture/ingCultureList.do?ctrSeqNo=825&amp;listType=ing&amp;q_sortName=name&amp;q_currPage=1" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">11월 12~13일 동탄아트홀에서 무료 가족오페라 &#x27;마술피리&#x27;를 해요</div></div><div class="body">화성예술의전당 동탄아트홀에서 열리고 전석 무료예요. 관람 등급이 7세 이상이라 8세는 괜찮지만 6세는 공연장에 예외가 되는지 먼저 물어봐야 해요. 기사에는 첫날 매진이라고 나왔는데 예매 사이트에는 &#x27;판매중&#x27;으로 보여서, 남은 자리도 확인이 필요해요.</div><div class="ask">아이랑 이야기: 노래로만 이야기하는 공연은 어떤 느낌일까?</div><a class="more" href="https://www.kyeongin.com/article/1773899" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초가 2027학년도 방과후 프로그램 수요조사를 시작했어요</div></div><div class="body">11월 3일 가정통신문으로 1~5학년 방과후 프로그램 수요조사와 1학년 대상 맞춤형 프로그램 수요조사를 함께 안내했어요. 신청 마감일은 본문을 열어 보지 못해서 확인하지 못했어요. 학교 가정통신문에서 마감일부터 확인해 주세요.</div><div class="ask">아이랑 이야기: 내년에 방과후에 배워 보고 싶은 게 있어?</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=5578&amp;bbsId=3469" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">수원 온동네 돌봄·교육센터 11월 체험 신청 안내가 왔어요</div></div><div class="body">태장초가 11월 3일 올린 가정통신문에 따르면 1~3학년이 대상인 &#x27;체험 ON!&#x27; 활동이에요. 신청 기한과 체험 일정은 본문을 열어 보지 못해서 알 수 없어요. 8세 딸이 해당되니 가정통신문에서 기한을 확인해 주세요.</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=5578&amp;bbsId=3469" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">어제(3일) 코스피가 3.59% 내려 5,648.79로 마감했어요</div></div><div class="body">머니투데이에 따르면 코스닥도 4.08% 내려 704.39로 마감했어요. 미국 오라클이 AI 인프라에 쓸 200억 달러 조달 계획을 내놓고 주가가 떨어지면서 반도체 주식이 함께 약해졌다고 해요. 외국인이 약 1.5조 원을 팔았어요. 숫자에 놀라기보다 큰 흐름만 봐 주세요.</div><a class="more" href="https://www.mt.co.kr/stock/2026/11/04/2026110319524312309" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">10월 소비자물가가 1년 전보다 2.8% 올랐어요</div></div><div class="body">한국경제 보도에 따르면 9월 2.9%, 8월 3.1%에 이어 오름세가 조금씩 줄었지만 석유류는 14.9% 올랐어요. 가공식품과 외식도 각각 2.9% 올랐다고 해요. 한 곳의 보도라서 정확한 통계는 통계청 발표를 함께 봐 주세요.</div><a class="more" href="https://www.hankyung.com/article/2026110337721" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정 제81회 접수가 11월 10일 오후 5시에 마감돼요</div></div><div class="body">국사편찬위원회 일정에 따르면 시험은 11월 28일(토) 오전 10시이고 접수는 10일(화) 17시까지예요. 취소좌석 접수는 11일부터 13일 17시까지, 시험장 변경은 11일부터 20일 17시까지 할 수 있어요.</div><a class="more" href="https://www.historyexam.go.kr/main/examSchedChk.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">수요일 아침이에요. 하루 절반 왔다고 생각하며 아이 손 잡고 힘내 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
