@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-05</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 5일 목요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 5일 목요일이에요. 이번 주말 추위 소식과 아이 건강 챙길 것들을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/5)
+📰 SBS 보도에 따르면 4일 연천 산란계 농장에서 고병원성 AI(조류 인플루엔자)가 확진됐어요.
+🏠 전국 예보 기준으로 7일(토)은 대체로 맑고 아침 최저 영하 4도~영상 5도, 낮 최고 8~14도예요.
+🧸 교육부 업무보고를 전한 아시아경제에 따르면 지금은 초3만 받는 연 50만 원 방과후 프로그램 이용권이 2027년부터 초3·4학년으로 확대돼…
+🩺 질병관리청 예방접종도우미에 따르면 생후 6개월~14세 어린이는 2026년 9월 21일부터 2027년 4월 30일까지 인플루엔자 국가예방접종…
+📈 국민일보에 따르면 코스피는 5,683.80으로 마감했고 코스닥은 714.95로 1.50% 올랐어요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">경기 연천 농장에서 올겨울 첫 고병원성 AI가 확인됐어요</div></div><div class="body">SBS 보도에 따르면 4일 연천 산란계 농장에서 고병원성 AI(조류 인플루엔자)가 확진됐어요. 총리는 발생 농장 살처분, 이동제한, 철새도래지 출입통제 같은 확산 차단 조치를 지시했다고 해요. 한 곳의 보도라서 방역당국 발표를 함께 확인해 주세요.</div><div class="ask">아이랑 이야기: 철새는 겨울이 되면 왜 따뜻한 곳으로 날아갈까?</div><a class="more" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008831195" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">토요일(7일) 아침은 영하권, 바람도 강하대요</div></div><div class="body">전국 예보 기준으로 7일(토)은 대체로 맑고 아침 최저 영하 4도~영상 5도, 낮 최고 8~14도예요. 8일(일)은 흐리고 아침 최저 영하 2도~영상 6도예요. 경기 지역만의 수치는 기사에 없고 강풍 때문에 체감온도는 더 낮을 수 있어요.</div><div class="ask">아이랑 이야기: 바람 부는 날엔 어떤 옷이 제일 따뜻할까?</div><a class="more" href="https://www.topstarnews.net/news/articleView.html?idxno=16268313" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">광교호수공원 숲체험이 6~8일, 만석전시관 전시는 12월 4일까지예요</div></div><div class="body">수원시가 11월 문화행사로 광교호수공원 &#x27;숲체험&#x27;을 6일부터 8일까지 운영한다고 해요. 수원시립만석전시관 &#x27;그린그린뮤지엄 2부: 감각노트&#x27;는 12월 4일까지예요. 요금과 예약 여부는 기사에 없어서 운영 기관에 확인해 주세요.</div><div class="ask">아이랑 이야기: 숲에서 가장 먼저 찾아보고 싶은 건 뭐야?</div><a class="more" href="https://www.dongbangilbo.co.kr/news/articleView.html?idxno=112319" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">방과후 이용권 연 50만 원, 2027년엔 초등 3·4학년으로 넓어진다고 해요</div></div><div class="body">교육부 업무보고를 전한 아시아경제에 따르면 지금은 초3만 받는 연 50만 원 방과후 프로그램 이용권이 2027년부터 초3·4학년으로 확대돼요. 내년에 초3이 되는 8세 딸도 대상 학년이에요. 초4 확대의 신청 방식과 예산은 확인되지 않았고 교육부 원문도 확인하지 못해서, 지금 챙기면 좋은 제도로만 알아 두시고 학교 안내를 기다려 주세요.</div><a class="more" href="https://view.asiae.co.kr/article/2026080517190083396" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">어린이 독감 무료 접종은 2027년 4월 30일까지예요</div></div><div class="body">질병관리청 예방접종도우미에 따르면 생후 6개월~14세 어린이는 2026년 9월 21일부터 2027년 4월 30일까지 인플루엔자 국가예방접종을 무료로 받을 수 있어요. 8세·6세 두 딸 모두 대상 나이예요. 지금 챙기면 좋아요. 접종했는지 확인하고 아직이라면 일정을 잡아 보세요.</div><div class="ask">아이랑 이야기: 주사 맞는 날 용기 내는 방법이 뭐가 있을까?</div><a class="more" href="https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&amp;menuCd=134" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">어제(4일) 코스피는 장중 크게 흔들렸다가 0.62% 올라 마감했어요</div></div><div class="body">국민일보에 따르면 코스피는 5,683.80으로 마감했고 코스닥은 714.95로 1.50% 올랐어요. 낮에 한때 4% 넘게 떨어졌다가 오후에 되돌렸어요. 외국인이 약 2.5조 원을 팔았고 원/달러 환율은 1,341.5원으로 마감했어요.</div><a class="more" href="https://www.kmib.co.kr/article/20261104502338" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">기능사 제4회 실기 빈자리 접수가 11월 8~9일 이틀이에요</div></div><div class="body">Q-Net 일정에 따르면 기능사 제4회 실기시험은 14일(토)부터 30일(월)까지 치러지고, 빈자리 원서접수는 8일(일)부터 9일(월)까지예요. 기술사 제140회 면접(14~28일)도 같은 날짜에 빈자리 접수를 받아요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103&amp;gSite=Q&amp;gId=&amp;CST_ID=CRF_Stns_06" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">목요일 아침이에요. 주말 전 하루만 더, 아이 손 꼭 잡고 힘내 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
