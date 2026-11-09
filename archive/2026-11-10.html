@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-10</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 10일 화요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 10일 화요일이에요. 이번 주말 날씨와 오늘 마감인 안내를 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/10)
+📰 삼성은 11월 8일 대구에서 KT를 12대 1로 꺾고 4승 1패로 우승했어요.
+🏠 기상청 중기예보(11월 9일 저녁 발표)에 따르면 수원·화성은 14일 9~14도, 15일 10~16도예요.
+🧸 태장초 가정통신문에 11월 9일 &#x27;2027학년도 신입생 예비소집일 안내&#x27;가 등록됐어요.
+🩺 국민건강보험공단은 검진기간이 매년 1월 1일부터 12월 31일까지라고 안내했어요.
+📈 코스닥도 0.82% 내려 638.97이었어요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">삼성 라이온즈가 12년 만에 한국시리즈 우승을 했어요</div></div><div class="body">삼성은 11월 8일 대구에서 KT를 12대 1로 꺾고 4승 1패로 우승했어요. 2014년 이후 12년 만이고 통산 9번째 우승이에요. 주장 구자욱 선수가 MVP를 받았고, 강민호 선수는 프로 22년 만에 첫 우승을 맛봤어요.</div><div class="ask">아이랑 이야기: 오래 기다려서 이긴 선수들은 어떤 기분일까?</div><a class="more" href="https://www.khan.co.kr/article/202611081809001" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">공정위가 배달의민족·쿠팡이츠에 과징금 6,319억 원을 부과했어요</div></div><div class="body">공정거래위원회가 11월 9일 배민에 3,311억 원, 쿠팡에 3,008억 원을 부과했다고 해요. 다른 배달앱보다 불리하지 않은 조건을 가게에 요구한 점 등이 문제가 됐어요. 아직 잠정이고 서울경제는 두 회사가 행정소송을 예고했다고 전했어요.</div><a class="more" href="https://www.sedaily.com/article/20112085" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">토요일(14일) 오후부터 일요일(15일) 오전까지 비가 올 수 있어요</div></div><div class="body">기상청 중기예보(11월 9일 저녁 발표)에 따르면 수원·화성은 14일 9~14도, 15일 10~16도예요. 용인은 14일 7~14도, 15일 8~16도라서 아침이 2도쯤 더 쌀쌀해요. 비 올 확률은 권역 전체 값으로 14일 오후 60%, 15일 오전 60%이니 토요일 오전 외출이 좋고, 예보는 바뀔 수 있어요.</div><div class="ask">아이랑 이야기: 비 오는 날 집이나 박물관에서 하고 싶은 놀이가 뭐야?</div><a class="more" href="https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">화성시 역사박물관 주말 가족체험, 11월 14일~12월 6일 무료예요</div></div><div class="body">초등학생 이상 자녀와 보호자 가족이 대상이라 8세 딸은 가능하지만 6세는 조건 밖이에요. 토요일은 코딩로봇 어천역 시간여행, 일요일은 비누 만들기이고 오후 1~3시에 열려요. 신청은 화성특례시 통합예약시스템에서 선착순이고, 마감일은 기사에 없어서 일찍 확인해 주세요.</div><div class="ask">아이랑 이야기: 옛날 기차역에는 어떤 사람들이 오갔을까?</div><a class="more" href="https://www.dailian.co.kr/news/view/1712548/%ED%99%94%EC%84%B1%EC%8B%9C-%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80-%EC%8B%9C%EA%B0%84-%ED%92%88%EC%9D%80-%EC%96%B4%EC%B2%9C%EC%97%AD-2026" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">용인 농촌테마파크 12월 체험 신청은 11월 20일까지예요</div></div><div class="body">용인시 통합예약시스템 안내에 따르면 체험은 희망하는 달의 전달 20일까지 신청해요. 곤충 체험은 1인 10,000원이고 현장에서 카드로 결제해요. 대상은 &#x27;전체&#x27;로 적혀 있고 운영시간은 확인하지 못했어요. 신청 뒤 담당자와 통화로 일정을 확정해야 해요.</div><div class="ask">아이랑 이야기: 곤충 친구들 중에 제일 만나 보고 싶은 건 누구야?</div><a class="more" href="https://resve.yongin.go.kr/resve/manage/BD_selectResveManage.do?q_lclas=CL_01&amp;q_resveCl=CL_01_1&amp;q_rsn=2352" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초에 2027학년도 신입생 예비소집일 안내가 올라왔어요</div></div><div class="body">태장초 가정통신문에 11월 9일 &#x27;2027학년도 신입생 예비소집일 안내&#x27;가 등록됐어요. 목록에서 제목만 확인했고 날짜·장소·준비물은 확인하지 못했어요. 6세 딸이 2027년 입학 대상이니 학교 홈페이지에서 글을 열어 확인해 주세요.</div><div class="ask">아이랑 이야기: 학교에 가면 제일 기대되는 게 뭐야?</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=5578&amp;bbsId=3469" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">올해 일반건강검진은 12월 31일까지 받아야 해요</div></div><div class="body">국민건강보험공단은 검진기간이 매년 1월 1일부터 12월 31일까지라고 안내했어요. 일반건강검진은 2년에 1번이고 비사무직은 매년이에요. 아직 안 받았다면 지금 챙기면 좋아요. 건강모아나 건강보험 앱에서 대상과 검진기관을 확인하세요.</div><a class="more" href="https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">어제(9일) 코스피가 0.81% 내려 5,018.85로 마감했어요</div></div><div class="body">코스닥도 0.82% 내려 638.97이었어요. 장중에 많이 올랐다가 상승분을 돌려주고 5,000선을 겨우 지켰다고 해요. 원/달러 환율은 1,347.1원으로 전날보다 9.5원 내렸어요. 매체마다 일부 집계가 달라서 큰 흐름만 참고해 주세요.</div><a class="more" href="https://seoul.co.kr/news/economy/securities/2026/11/09/20261109500283" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정 제81회 정기 접수가 오늘(10일) 오후 5시에 마감해요</div></div><div class="body">국사편찬위원회 안내에 따르면 시험은 11월 28일(토)이고 추가 접수는 11일 오후 1시부터 13일 오후 5시까지예요. 추가 접수는 남은 자리가 있을 때만 가능해요. 합격자 발표는 12월 11일(금)이에요.</div><a class="more" href="https://www.historyexam.go.kr/pageLink.do?link=examSchedule" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">준학예사 제27회 1차 시험은 11월 14일(토)이에요</div></div><div class="body">Q-Net 시험일정에 따르면 박물관 및 미술관 준학예사 1차 시험이 이번 토요일이에요. 응시하는 분은 시험 준비물과 장소를 미리 확인하세요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">화요일 아침이에요. 오늘도 아이와 눈 맞추고 한 번 웃으며 시작해 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
