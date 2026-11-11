@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-12</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 12일 목요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 12일 목요일이에요. 이번 주말 가 볼 만한 수원 나들이와 독감 예방접종, 물가 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/12)
+🏠 영흥수목원 전시온실의 「헨젤과 그레텔: 유혹의 숲」이 11월 15일까지예요.
+🧸 보건복지부는 아동수당 지급 연령이 매년 1세씩 올라 올해 만 9세 미만, 2027년 만 10세 미만이 된다고 안내했어요.
+🩺 질병관리청은 11월 6일 인플루엔자 발생이 다시 늘고 있다며 어린이·어르신 예방접종을 서두르라고 당부했어요.
+📈 이데일리와 한국경제에 따르면 10월 소비자물가 상승률은 2.8%로 한국은행 목표 2%보다
+🎓 한국데이터산업진흥원 일정표에 따르면 수험표는 10월 30일부터 발급돼 있어요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">수원 영흥수목원 동화 특별전이 15일(일)에 끝나요</div></div><div class="body">영흥수목원 전시온실의 「헨젤과 그레텔: 유혹의 숲」이 11월 15일까지예요. 입장료는 수원시 안내 기준으로 6세 이하는 무료이고 7~12세 어린이는 1,500원이에요(수원시민은 1,000원, 증빙 필요). 월요일은 쉬고, 특별전 추가 요금은 확인되지 않아 공원녹지사업소(031-369-2390)에 물어보면 좋아요.</div><div class="ask">아이랑 이야기: 동화 속 숲에서 제일 만나고 싶은 친구는 누구야?</div><a class="more" href="https://www.suwon.go.kr/sw-www/sw-yharbor/sw-yharbor-02/sw-yharbor-02-01/sw-yharbor-02-01-02.jsp" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">수원광교박물관 어린이체험실은 무료예요</div></div><div class="body">36개월~9세 아이와 보호자가 함께 이용할 수 있어서 8세·6세 모두 갈 수 있어요. 하루 6회차이고 회차마다 아이 14명까지라, 수원시박물관사업소 통합예약시스템에서 미리 예약하는 게 좋아요(남는 자리는 현장 접수). 월요일은 쉬고 문의는 031-5191-4225예요.</div><div class="ask">아이랑 이야기: 박물관에서 가장 신기했던 물건은 뭐였어?</div><a class="more" href="https://rmuseum.suwon.go.kr/childexprn/infoGwang.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">아동수당은 올해 만 9세 미만까지 받아요</div></div><div class="body">보건복지부는 아동수당 지급 연령이 매년 1세씩 올라 올해 만 9세 미만, 2027년 만 10세 미만이 된다고 안내했어요. 수도권은 월 10만 원이에요. 8세·6세 두 딸 모두 연령 안이니 받고 있는지 지금 확인해 보세요.</div><a class="more" href="https://www.mohw.go.kr/board.es?mid=a10503010100&amp;bid=0027&amp;act=view&amp;list_no=1490257&amp;tag=&amp;nPage=1" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">수원 다함께돌봄센터는 만 6~12세 초등 아이가 대상이에요</div></div><div class="body">수원시 안내에 따르면 돌봄이 필요한 초등 아이가 이용할 수 있고, 급식·간식비는 이용자가 부담해요. 지역아동센터는 초·중학생이 대상이며 일반 아동은 월 10만 원 이내로 안내돼 있어요. 방과후 돌봄이 필요할 때 해당 센터에 전화나 방문으로 문의해 보세요.</div><a class="more" href="https://www.suwon.go.kr/sw-www/deptHome/dep_welfare/welfare10/welfare10-06.jsp" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">어린이 독감 무료 접종은 2027년 4월 30일까지예요</div></div><div class="body">질병관리청은 11월 6일 인플루엔자 발생이 다시 늘고 있다며 어린이·어르신 예방접종을 서두르라고 당부했어요. 생후 6개월~14세 어린이(2012.1.1.~2026.8.31. 출생)는 2027년 4월 30일까지 지정 병원이나 보건소에서 무료로 맞을 수 있다고 안내했어요. 병원은 예방접종도우미에서 찾고, 접종 전에 가능 여부를 먼저 문의하세요.</div><div class="ask">아이랑 이야기: 주사 맞기 전에 마음이 편해지는 방법은 뭐가 있을까?</div><a class="more" href="https://www.kdca.go.kr/bbs/kdca/42/313376/artclView.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">10월 소비자물가가 2.8% 올랐어요</div></div><div class="body">이데일리와 한국경제에 따르면 10월 소비자물가 상승률은 2.8%로 한국은행 목표 2%보다 높아요. 기준금리는 연 3%이고 올해 마지막 금통위는 26일이에요. 반도체는 좋지만 소매판매는 줄어 내수는 아직 조심스러운 모습이에요.</div><a class="more" href="https://www.hankyung.com/article/2026111109361" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">어제(11일) 코스피는 반도체가 이끌어 5,375선에 마감했어요</div></div><div class="body">YTN에 따르면 코스피는 외국인 매수 덕에 약 2.6% 올랐고, 코스닥은 이틀 연속 매수 사이드카가 발동됐어요. 원/달러 환율은 1,333.6원으로 3.9원 내렸어요. 변동이 큰 구간이라 숫자에 놀라기보다 흐름만 봐 주세요.</div><a class="more" href="https://www.ytn.co.kr/_ln/0102_202611120014207555" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">미국 12월 금리 인상 가능성이 더 구체적으로 나왔어요</div></div><div class="body">어제 전한 미국 물가 소식의 후속이에요. 이데일리에 따르면 CME 페드워치 기준 12월 0.25%포인트 인상 확률이 약 88%, 0.5%포인트 인상은 약 12%로 나왔어요. 환율과 증시에 영향을 줄 수 있어 참고만 해 두세요.</div><a class="more" href="https://www.edaily.co.kr/News/Read?newsId=05713766645644736&amp;mediaCodeNo=257" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">SQLD 제63회 시험이 모레(14일) 토요일이에요</div></div><div class="body">한국데이터산업진흥원 일정표에 따르면 수험표는 10월 30일부터 발급돼 있어요. 사전점수 공개·재검토는 11월 27일~12월 1일, 합격(예정) 발표는 12월 4일이에요. 응시하는 분은 수험표와 준비물을 미리 챙겨 두세요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">ADsP 제51회 사전점수 재검토가 내일(13일)부터 17일까지예요</div></div><div class="body">10월 31일 시험을 본 분은 11월 13일~17일에 사전점수를 확인하고 재검토를 신청할 수 있어요. 합격(예정) 발표는 11월 20일(금)이에요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">목요일 아침이에요. 주말까지 하루만 더, 오늘도 아이 손 잡고 따뜻하게 시작해 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
