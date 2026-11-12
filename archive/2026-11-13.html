@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-13</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 13일 금요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 13일 금요일이에요. 주말 나들이 한 곳과 독감·건강검진 챙길 것, 오늘 마감인 시험 접수를 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/13)
+🏠 「너의 목소리가 들려」는 12월 13일(일)까지 주말에 열려요.
+🧸 태장초 가정통신문에 11월 체험 신청 안내가 11월 3일에 올라왔고, 교육청 게시판에는 2·3탄 신청 안내가 11월 9일에 올라왔어요.
+🩺 질병관리청은 11월 11일 인플루엔자 국가예방접종이 차질 없이 진행 중이라고 밝혔어요.
+📈 어제 전한 소식의 후속이에요.
+🎓 Q-Net 일정표에 따르면 면접 원서접수는 11월 16일(월)~20일(금)이에요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">용인 경기도어린이박물관 주말가족 프로그램, 6세와 8세는 회차가 달라요</div></div><div class="body">「너의 목소리가 들려」는 12월 13일(일)까지 주말에 열려요. 1회차는 만 4~6세, 2회차는 만 7~9세 어린이와 가족이 각 6팀씩이라 6세 딸과 8세 딸은 서로 다른 회차예요. 참가비는 2,000원(기준 단위는 안내 페이지에 없어요)이고, 예약은 박물관 누리집의 예약 링크에서 하는데 방법 설명은 페이지에 따로 없어서 방문 전에 한 번 더 확인해 보세요.</div><div class="ask">아이랑 이야기: 내 목소리로 가장 하고 싶은 말은 뭐야?</div><a class="more" href="https://gcm.ggcf.kr/" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">태장초 1~3학년 온동네 체험 2·3탄 신청 안내가 올라왔어요</div></div><div class="body">태장초 가정통신문에 11월 체험 신청 안내가 11월 3일에 올라왔고, 교육청 게시판에는 2·3탄 신청 안내가 11월 9일에 올라왔어요. 1~3학년 대상이라 8세 딸이 해당돼요. 신청 기한과 프로그램 내용은 아직 확인이 더 필요하니 가정통신문 본문에서 날짜를 꼭 챙겨 보세요.</div><div class="ask">아이랑 이야기: 학교 밖에서 해 보고 싶은 체험이 있어?</div><a class="more" href="https://taejang-e.goesw.kr/taejang-e/na/ntt/selectNttList.do?mi=5578&amp;bbsId=3469" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">내년 초3이 되면 방과후 이용권을 받을 수 있어요</div></div><div class="body">교육부는 연 50만 원 방과후 프로그램 이용권을 올해 초등 3학년부터 도입했고, 2027년에는 초등 4학년까지 넓히기로 했다고 밝혔어요. 지금 8세 딸이 내년에 3학년이 되면 대상 학년에 들어가요. 신청 절차와 기간은 아직 발표되지 않았으니 공지가 나오면 그때 챙기면 좋아요.</div><a class="more" href="https://www.korea.kr/news/policyNewsView.do?newsId=148961879" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">어린이 독감 접종, 아직 잔여 백신이 있는 병원이 많아요</div></div><div class="body">질병관리청은 11월 11일 인플루엔자 국가예방접종이 차질 없이 진행 중이라고 밝혔어요. 11월 10일 기준 어린이 접종률은 57.9%(1회 접종 기준)이고, 위탁의료기관 82.7%가 잔여 백신을 갖고 있다고 해요. 아직 안 맞았다면 가까운 병원이나 보건소에 먼저 문의해 보세요. 열이 나거나 기침, 인후통이 있으면 의료기관에서 진료받으라고 당부했어요.</div><div class="ask">아이랑 이야기: 주사 맞고 나면 어떤 기분이 들 것 같아?</div><a class="more" href="https://www.kdca.go.kr/bbs/kdca/41/313427/artclView.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">올해 건강검진은 12월 31일까지예요</div></div><div class="body">지금 챙기면 좋은 상시 안내예요. 국민건강보험공단은 일반건강검진 기간이 12월 31일에 끝나고, 확진검사는 다음 해 3월 31일까지 가능하다고 안내했어요. 보통 2년에 1회(비사무직은 매년) 받는 검진이라 올해 대상인지 공단에서 먼저 확인해 보세요. 검진 항목 밖의 검사는 비용이 들 수 있다고 해요(2026년 안내문 기준).</div><a class="more" href="https://www.nhis.or.kr/nhis/healthin/wbhaca04500m01.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">미국 12월 금리 인상 가능성이 91%까지 올랐어요</div></div><div class="body">어제 전한 소식의 후속이에요. 글로벌이코노믹에 따르면 CME 페드워치 기준 12월 0.25%포인트 인상 확률이 91%로 어제 88%보다 올랐고, 0.5%포인트 인상 확률도 약 10%로 올랐어요. 미국 10월 소비자물가가 시장 예상보다 높게 나온 영향이에요. 환율과 대출금리에 영향을 줄 수 있어 참고만 해 두세요.</div><a class="more" href="https://www.g-enews.com/view.php?ud=202611122118308819a1f309431_1" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">국토부 장관 &quot;서울 집값, 하락기 신호로 볼 수 있어요&quot;</div></div><div class="body">SBS에 따르면 홍지선 국토교통부 장관이 국회에서 서울 주택시장에 매물이 쌓이고 거래가 줄어드는 것을 하락기 신호로 볼 수 있다고 말했어요. 연말에 기준금리가 오르면 하락 폭이 커질 수 있다고도 했어요. 전월세 불안에는 수도권 임대주택 공급을 늘리겠다고 했어요.</div><a class="more" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008843884&amp;plink=ORI&amp;cooper=NAVER" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">코스피는 어제 5,342.73으로 마감했어요</div></div><div class="body">국민일보에 따르면 12일 코스피는 장중 올랐다가 엔비디아 CEO 관련 불확실성에 하락 전환해 5,342.73에 마감했어요. 6월 22일 고점보다 41.4% 낮은 수준이고 지난 한 달간 16.2% 내렸어요. 삼성전자·SK하이닉스 3분기 실적은 역대 최고라는데도 지수는 부진했다고 해요.</div><a class="more" href="https://www.kmib.co.kr/article/20261112501963" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">청소년지도사 제34회 면접 접수가 다음 주 월요일(16일)에 시작해요</div></div><div class="body">Q-Net 일정표에 따르면 면접 원서접수는 11월 16일(월)~20일(금)이에요. 필기 합격자 발표는 11월 4일이었어요. 면접 시험일은 일정표에 아직 나와 있지 않아요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">공인노무사 제35회 2차 합격자는 18일 발표, 3차 면접은 27일이에요</div></div><div class="body">Q-Net 일정안내에 따르면 2차 합격자 발표는 11월 18일(수)이고, 3차 면접 시험은 11월 27일(금)이에요. 발표 후 면접까지 5일이라 해당되는 분은 미리 준비해 두면 좋아요.</div><a class="more" href="https://www.q-net.or.kr/crf021.do?id=crf02103" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">금요일 아침이에요. 한 주 수고했어요, 오늘 저녁엔 아이 손 잡고 따뜻한 이야기 나눠 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
