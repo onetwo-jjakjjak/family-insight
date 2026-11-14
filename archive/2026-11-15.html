@@ -1,0 +1,75 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-15</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 15일 일요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 15일 일요일이에요. 포근한 주말 날씨와 독감 예방 수칙, 이번 주 시험 일정을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/15)
+🏠 한국경제가 전한 예보에 따르면 오늘 아침 6~13도, 낮 16~21도로 평년보다
+🩺 약사공론에 따르면 질병관리청은 44주차(10월 25~31일) 외래환자 1,000명당 독감 의심 환자가 22.8명으로 전주 19.2명보다
+📈 헬로티에 따르면 정부가 13일 국가정책조정회의에서 미사용 카드포인트 약 2.1조 원을 지역화폐로 전환하는 방안을 확정했어요.
+🎓 데이터자격시험 일정표에 따르면 데이터분석 준전문가(ADsP) 제51회는 사전점수 공개가 11월 13~17일이고 합격자 발표는 20일이에요.
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">오늘(15일) 낮 최고 21도로 포근하고, 내일 아침은 5~8도 뚝 떨어져요</div></div><div class="body">한국경제가 전한 예보에 따르면 오늘 아침 6~13도, 낮 16~21도로 평년보다 포근해요. 경기 남동부는 오전까지 1mm 안팎의 비가 오다가 차차 맑아져요. 내일(16일) 아침은 오늘보다 5~8도 낮아진다고 하니 등원·등교 겉옷을 챙겨 주세요. 예보라서 바뀔 수 있어요.</div><div class="ask">아이랑 이야기: 갑자기 추워지는 날엔 어떤 옷을 입으면 따뜻할까?</div><a class="more" href="https://www.hankyung.com/article/2026111466337" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">동탄아트홀 국립극단 &lt;스카팽&gt;이 20~22일에 열려요, 8세부터 볼 수 있어요</div></div><div class="body">화성예술의전당 동탄아트홀에서 20일(금) 저녁 7시 30분, 21일(토)·22일(일) 오후 3시에 공연해요. 120분이고 중간 휴식이 없으며 8세 이상 관람이라 8세 딸은 볼 수 있지만 6세는 어려워요. 인터파크에서 예매 중이니 가족 일정에 맞춰 확인해 보세요.</div><div class="ask">아이랑 이야기: 연극에서 제일 보고 싶은 장면은 어떤 거야?</div><a class="more" href="https://hac.hcf.or.kr/pfmc/view.do?pfmcSn=2605150004&amp;key=2511190009" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">질병관리청 발표, 독감 환자가 늘었고 7~12세가 가장 많아요</div></div><div class="body">약사공론에 따르면 질병관리청은 44주차(10월 25~31일) 외래환자 1,000명당 독감 의심 환자가 22.8명으로 전주 19.2명보다 늘었다고 밝혔어요. 연령별로는 7~12세가 60.9명으로 가장 높았어요. 질병관리청은 손씻기, 기침할 때 옷소매로 가리기, 사람 많은 곳 마스크, 실내 환기를 당부했어요.</div><div class="ask">아이랑 이야기: 기침이 나올 때 팔로 입을 가리는 시범을 보여 줄래?</div><a class="more" href="https://www.kpanews.co.kr/news/articleView.html?idxno=548294" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#FBE7E7;color:var(--c-health)">🩺</div><div class="title">올겨울 독감 무료 접종, 14세까지 2027년 4월 30일까지 맞을 수 있어요</div></div><div class="body">지금 챙기면 좋은 제도예요. 질병관리청은 생후 6개월~14세 어린이가 국가예방접종 대상이고, 접종 기간은 2027년 4월 30일까지라고 안내했어요. 9세 미만은 과거 접종이 없거나 1회만 맞았다면 2회 접종 대상이라고 해요. 두 딸의 접종 기록을 확인해 보세요. 주소지와 상관없이 위탁의료기관이나 보건소에서 무료로 맞을 수 있어요.</div><a class="more" href="https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEyMzA4JTJGYXJ0Y2xWaWV3LmRvJTNG" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">안 쓴 카드포인트 2.1조 원, 2027년 5월부터 지역화폐로 바꿔 쓸 수 있대요</div></div><div class="body">헬로티에 따르면 정부가 13일 국가정책조정회의에서 미사용 카드포인트 약 2.1조 원을 지역화폐로 전환하는 방안을 확정했어요. 2027년 5월 시행 예정이고, 어카운트인포나 지자체 앱에서 카드사별 포인트를 조회해 전환해요. 전환 다음 날부터 골목상권·전통시장에서 쓸 수 있다고 해요. 한 곳의 보도라서 세부는 참고만 해 주세요.</div><a class="more" href="https://www.hellot.net/news/article.html?no=116309" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">국제 금값이 한 주 사이 4.5% 내려 온스당 3,900달러 아래로 내려왔어요</div></div><div class="body">글로벌이코노믹에 따르면 13일 현물 금은 온스당 3,879.71달러로 6월 초 이후 가장 큰 주간 하락폭을 보였어요. 국내 순금 한 돈 시세는 한 주 동안 7.5% 내린 73만 2천 원대로 보도됐어요.</div><a class="more" href="https://www.g-enews.com/view.php?ud=2026111419035476179a1f309431_1" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">ADsP 제51회 합격 발표는 20일, ADP 합격자 서류 제출도 20일까지예요</div></div><div class="body">데이터자격시험 일정표에 따르면 데이터분석 준전문가(ADsP) 제51회는 사전점수 공개가 11월 13~17일이고 합격자 발표는 20일이에요. 데이터분석 전문가(ADP) 제37회 실기는 13일 발표됐고 서류 제출은 20일까지예요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">SQLD 제63회 시험은 끝났고 합격자 발표는 12월 4일이에요</div></div><div class="body">일정표 기준으로 사전점수 공개는 11월 27일~12월 1일이에요. 올해 하반기 일정표에는 SQLD 추가 회차가 없어요.</div><a class="more" href="https://www.dataq.or.kr/www/accept/schedule.do" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">한국사능력검정시험 제81회는 11월 28일(토)이고 접수는 끝났어요</div></div><div class="body">국사편찬위원회 일정에 따르면 원서접수는 11월 10일에, 취소좌석 접수는 13일에 끝났어요. 공식 페이지에는 합격자 발표일이 아직 적혀 있지 않아요.</div><a class="more" href="https://m.historyexam.go.kr/pageLink.do?link=examSchedule" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">일요일 오후, 포근한 햇살 아래 아이 손 잡고 짧은 산책 어때요? 내일부터 쌀쌀하니 오늘 마음껏 즐겨요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
