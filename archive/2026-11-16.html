@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 가족 브리핑 · 2026-11-16</title>
+<style>
+  :root{--bg:#EDF0F4;--card:#FFFFFF;--ink:#1F2933;--muted:#737B86;--line:#E7EAEF;--accent:#E0922F;--accent-soft:#FFF6E9;--c-talk:#F2994A;--c-kid:#7C5CFF;--c-money:#2E9E6B;--c-home:#3B82C4;--c-news:#5B6470;--c-health:#E36464;--c-life:#3FB6C0;--c-cert:#4C6EF5;--radius:18px;--shadow:0 1px 2px rgba(31,41,51,.04),0 6px 16px rgba(31,41,51,.06);}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:"Pretendard","Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px;}
+  .wrap{max-width:480px;margin:0 auto;}
+  header{background:radial-gradient(120% 90% at 80% -10%,#FFD27A 0%,#F4A845 38%,#E0922F 72%,#C97A1E 100%);color:#fff;padding:calc(env(safe-area-inset-top) + 26px) 22px 30px;border-radius:0 0 26px 26px;box-shadow:0 8px 22px rgba(224,146,47,.28);}
+  .date{font-size:13.5px;font-weight:600;opacity:.92;}
+  .hello{font-size:23px;font-weight:800;margin-top:6px;line-height:1.32;letter-spacing:-.3px;}
+  .weather{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:rgba(255,255,255,.2);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600;}
+  .copy{margin:16px 14px 0;background:var(--accent-soft);border:1.5px solid #F1D9AF;border-radius:var(--radius);padding:16px 16px 14px;}
+  .copy-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .copy-head span{font-size:14px;font-weight:800;color:#A66514;}
+  .copy-btn{border:none;background:var(--accent);color:#fff;font-family:inherit;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;}
+  .copy-btn:active{transform:scale(.96);}
+  .copy-body{font-size:14.5px;line-height:1.62;color:#5A4527;white-space:pre-line;}
+  .stack{padding:0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin-top:12px;box-shadow:var(--shadow);}
+  .head{display:flex;align-items:center;gap:11px;margin-bottom:8px;}
+  .chip{width:34px;height:34px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .title{font-size:16.5px;font-weight:800;letter-spacing:-.3px;}
+  .body{font-size:15.5px;color:#36404B;}
+  .body b{color:var(--ink);font-weight:700;}
+  .ask{margin-top:9px;font-size:14.5px;color:#5A4527;background:#FFFBF3;border-left:3px solid var(--c-talk);padding:8px 11px;border-radius:0 9px 9px 0;}
+  .more{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border:1px solid #F1D9AF;padding:8px 14px;border-radius:999px;min-height:38px;}
+  .more:active{opacity:.6;}
+  footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;padding:0 24px;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#1F2933;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:999px;opacity:0;transition:all .25s;pointer-events:none;}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+
+.onemore{margin:18px 14px 0;background:var(--card);border:1px solid var(--line);
+border-radius:var(--radius);padding:15px 16px;font-size:14.5px;color:var(--muted);
+box-shadow:var(--shadow);line-height:1.65}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);
+background:rgba(31,41,51,.94);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+opacity:0;pointer-events:none;transition:.22s}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div class="date">2026년 11월 16일 월요일</div>
+  <div class="hello">좋은 아침이에요 ☀️<br>오늘의 우리 가족 이야기</div>
+  <div class="weather">2026년 11월 16일 월요일이에요. 새 한 주를 여는 좋은 수출 소식과 수능 앞둔 시험 감독 소식, 용인 나들이 소식을 짧게 모았어요.</div>
+</header>
+<div class="copy">
+  <div class="copy-head"><span>📋 오늘의 한입 (복사해서 보내기)</span>
+  <button class="copy-btn" onclick="copyCard()">복사</button></div>
+  <div class="copy-body" id="cardText">☀️ 우리 가족 모닝 브리핑 (11/16)
+📰 과기정통부와 산업부 발표를 전한 아주경제에 따르면 10월 ICT 수출은 703억 5천만 달러로 1년 전 232억 9천만 달러보다
+🏠 아주경제에 따르면 용인시가 15일 준공 기념식과 음악회를 열었고, 무대 공간에 최대 1만 명이 들어갈 수 있어요.
+🧸 지금 챙겨 두면 좋은 제도 안내예요.
+📈 뉴스S에 따르면 한국부동산원 11월 둘째 주 경기도 전세수급지수는 110.7로 2021년 8월 첫째 주(111.3) 이후 가장 높았어요.
+🎓 주간경향과 파이낸셜뉴스에 따르면 청와대는 15일 긴급대책회의에서 세무사 시험 수석 합격자의 AI 부정행위 시인을 계기로 국가자격시험 전체를…
+👉 자세히 보기: https://onetwo-jjakjjak.github.io/family-insight/</div>
+</div>
+<div class="stack"><div class="card"><div class="head"><div class="chip" style="background:#ECEEF1;color:var(--c-news)">📰</div><div class="title">10월 정보통신(ICT) 수출이 703억 달러로, 1년 전보다 3배 넘게 늘었어요</div></div><div class="body">과기정통부와 산업부 발표를 전한 아주경제에 따르면 10월 ICT 수출은 703억 5천만 달러로 1년 전 232억 9천만 달러보다 202% 늘었어요. 반도체가 564억 7천만 달러로 가장 컸고, 무역수지는 505억 5천만 달러 흑자였어요. 수출액으로는 9월(751억 5천만 달러)이 아직 가장 높아요.</div><div class="ask">아이랑 이야기: 우리 집 전자제품 중에 반도체가 들어 있는 건 뭐가 있을까?</div><a class="more" href="https://www.ajunews.com/view/20261115144856175" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E4EFF9;color:var(--c-home)">🏠</div><div class="title">용인 기흥호수공원에 최대 1만 명이 앉는 야외무대가 준공됐어요</div></div><div class="body">아주경제에 따르면 용인시가 15일 준공 기념식과 음악회를 열었고, 무대 공간에 최대 1만 명이 들어갈 수 있어요. 시는 내년 봄·가을 공연 운영을 목표로 한다고 해요. 지금은 주말 공연 일정이 확인되지 않았고 한 곳의 보도라서, 가족 프로그램이 공개되면 다시 알려 드릴게요.</div><div class="ask">아이랑 이야기: 호수 옆 큰 무대에서 어떤 공연을 보고 싶어?</div><a class="more" href="https://www.ajunews.com/view/20261115150847249" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#EFEBFF;color:var(--c-kid)">🧸</div><div class="title">2027년에는 유아 무상교육·보육이 3~5세로 넓어질 예정이에요</div></div><div class="body">지금 챙겨 두면 좋은 제도 안내예요. 교육부는 무상교육·보육 대상이 올해 4~5세에서 2027년 3~5세로 확대되고, 2027년 정부 예산안에 6,429억 원을 반영했다고 밝혔어요. 6세 딸은 이미 지원 연령이라 직접 바뀌는 건 크지 않아요. 예산안 단계 수치라서 국회 심의에서 달라질 수 있어요.</div><a class="more" href="https://www.moe.go.kr/boardCnts/viewRenew.do?m=020402&amp;s=moe&amp;page=1&amp;boardID=340&amp;boardSeq=107366&amp;lev=0&amp;opType=N" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E3F5EC;color:var(--c-money)">📈</div><div class="title">경기도 전세수급지수가 5년여 만에 가장 높아졌어요</div></div><div class="body">뉴스S에 따르면 한국부동산원 11월 둘째 주 경기도 전세수급지수는 110.7로 2021년 8월 첫째 주(111.3) 이후 가장 높았어요. 서울은 120.2, 인천은 110.4였어요. 국토부는 전월세 매물이 늘고 있지만 아직 충분하지 않다며, 수도권 입주 물량 공급을 계획대로 추진한다고 밝혔어요.</div><a class="more" href="https://news-s.kr/view.html?id=L2611152334412be8" target="_blank" rel="noopener">자세히 보기 →</a></div><div class="card"><div class="head"><div class="chip" style="background:#E6EBFF;color:var(--c-cert)">🎓</div><div class="title">청와대가 국가자격시험 AI 부정행위 의심 사례를 전수조사하기로 했어요</div></div><div class="body">주간경향과 파이낸셜뉴스에 따르면 청와대는 15일 긴급대책회의에서 세무사 시험 수석 합격자의 AI 부정행위 시인을 계기로 국가자격시험 전체를 조사하기로 했어요. 19일 수능을 앞두고 수험생 AI 기기 점검 절차를 마련하고 시험장마다 전담인력을 두는 방안도 점검했어요. 16일 차관회의에서 추가 대책을 논의할 예정이고, 전수조사 기한은 공개되지 않았어요.</div><div class="ask">아이랑 이야기: 시험은 왜 정직하게 봐야 할까?</div><a class="more" href="https://weekly.khan.co.kr/article/202611151818011/" target="_blank" rel="noopener">자세히 보기 →</a></div></div>
+<div class="onemore">월요일 아침이에요. 새 한 주도 아이 손 잡고 천천히, 따뜻하게 시작해 봐요.</div>
+</div>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(m){var el=document.getElementById('toast');el.textContent=m||'복사됐어요 ✓';
+el.classList.add('on');setTimeout(function(){el.classList.remove('on');},1600);}
+function fallbackCopy(t){var ta=document.createElement('textarea');ta.value=t;
+ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+document.body.appendChild(ta);ta.select();
+try{document.execCommand('copy');showToast();}catch(e){showToast('복사에 실패했어요');}
+document.body.removeChild(ta);}
+function copyCard(){var t=document.getElementById('cardText').innerText;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t)
+.then(function(){showToast();}).catch(function(){fallbackCopy(t);});}else{fallbackCopy(t);}}
+</script>
+</body></html>
